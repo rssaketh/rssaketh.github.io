@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Dual Memory</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <!--<meta property="og:image" content="https://people.eecs.berkeley.edu/~bmild/fourfeat/img/foxface.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="512">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://people.eecs.berkeley.edu/~bmild/fourfeat/"/>
+    <meta property="og:title" content="Fourier Feature Networks" />
+    <meta property="og:description" content="Project page for Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains." />-->
+
+        <!--TWITTER-->
+    <!--<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fourier Feature Networks" />
+    <meta name="twitter:description" content="Project page for Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains." />
+    <meta name="twitter:image" content="https://people.eecs.berkeley.edu/~bmild/fourfeat/img/foxface.jpg" />-->
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <link rel="icon" type="image/png" href="../images/unnamed.jpg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110862391-1');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                The Pursuit of Knowledge: <br> 
+                Discovering and Localizing new concepts using Dual Memory</br> 
+                <!--<small>
+                    NeurIPS 2020 (spotlight)
+                </small>-->
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://rssaketh.github.io">
+                          Sai Saketh Rambhatla
+                        </a>
+                        </br>UMD
+                    </li>
+                    <li>
+                        <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">
+                          Rama Chellappa
+                        </a>
+                        </br>JHU
+                    </li>
+                    <li>
+                        <a href="https://www.cs.umd.edu/~abhinav/">
+                            Abhinav Shrivastava
+                        </a>
+                        </br>UMD
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--<div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2006.10739">
+                            <image src="img/ff_paper_image.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tancik/fourier-feature-networks">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>-->
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <!--<image src="img/teaser.png" class="img-responsive" alt="overview"><br>-->
+                <p class="text-justify">
+One of the key reasons behind the success of object detection systems is the resurgence of deep learning, and more importantly, availability of rich annotated data. However, obtaining such rich annotations, in terms of class labels and bounding boxes, require significant human effort. In this work, we tackle object category discovery, which is the problem of discovering and localizing novel objects in a large unlabeled dataset. While existing methods show results on datasets with less cluttered scenes and fewer object instances per image, we present our results on the challenging COCO dataset. Moreover, we argue that rather than discovering new categories from scratch, discovery algorithms can benefit from identifying what is known and focusing their attention on the unknowns. We propose a method to utilize prior knowledge about certain object categories to discover new categories by leveraging two memory modules, namely Working and Semantic memory. In contrast to recently proposed object discovery methods, we perform discovery on the challenging COCO dataset. Finally, we show the performance of our detectors on the COCO minival dataset to demonstrate its in-the-wild capabilities.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!--<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/nVA6K6Sn2S4" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Approach Overview
+                </h3>
+                <image src="../images/dual_memory.png" class="img-responsive" alt="system figure"><br>
+
+                <!--<video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/lion_none_gauss_v1.mp4" type="video/mp4" />
+                </video>-->
+                <p class="text-justify">
+ This framework consists of three main modules: encoding, storage, and retrieval, prudently interacting with each other. To begin with, the encoding module extracts image regions and their representations; the storage module has memory slots that represent concepts and that are constantly being updated. The retrieval module takes as input, the storage and the output from the encoding modules, and outputs a decision which updates the memory slots. Finally a memory consolidation operation is performed to amalgamate the objects discovered in <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> to <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />.
+                </p>
+
+<p class="text-justify">
+<strong>Encoding:</strong> The goal of the encoding module is to process an input image and extract representations to be used by subsequent discovery pipeline. Our encoding module is an object detector, Faster R-CNN, trained on a dataset consisting of a set of known objects. Given an image, we use proposals/boxes from a region proposal network and their corresponding ConvNet features from the classification head (referred to as encoded representation), for the subsequent discovery. This module is akin to the encoding process in human memory, which converts sensory inputs to representations to be used by other processes. 
+</p>
+<!--<h4 align=left>Storage</h4>-->
+<p class="text-justify">
+<strong>Storage:</strong> The storage module consists of two memory blocks: <em>Semantic</em> (<image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />) and <em>Working</em> Memory (<image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />).  <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" /> serves the purpose of storing the prior and discovered concepts, and is initialized with prior knowledge. It resembles the human long-term memory in that aspect, which stores prior or acquired knowledge. On the other hand, <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> is used to temporarily store and manipulate representations of recently encountered objects, which can potentially be discovered, and is null initialized. The working memory resembles the short-term memory. 
+</p>
+<!--<p class="text-justify"> Both the memory modules are composed of slots, where each slot represents the regions belonging to it from the data encountered so far. A <strong>slot's representation</strong> is computed using encoded representations of all regions belonging to the particular slot. Whenever we encounter a region that's deemed `novel', a new slot is allocated for this region in working memory, <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />. If we encounter more regions that are associated with this slot, its slot representation is updated, and eventually consolidated with the semantic memory, <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" /> . We then consider this slot of a discovered object as known and mine for newer objects. The retrieval module handles the decisions that associate regions with slots. </p>-->
+
+<p class="text-justify">
+<strong>Retrieval:</strong> The retrieval module is the center for making decisions for our method. 
+It takes as input the current state of storage and the encoded representation (of the region being considered) from the encoding module, and makes a decision if the region belongs to 1) a known object (results in 'Update <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />' in figure), 2) previously encountered novel object ('Update <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />') or 3) Newly encountered novel object ('Create <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />').
+<p class="text-justify">
+<strong>Memory Consolidation:</strong> The Working Memory <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> is responsible for discovering new concepts, and after consistent/repeated occurrence of these concepts, they should be amalgamated with the Semantic memory <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />. Towards this, we propose a memory consolidation step, where representations formed in the Working Memory are added to the Semantic Memory, extending our repertoire of known categories. During the memory consolidation, the <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> is reinitialized to its original state (\ie, null), and the number of slots increase in <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />.</p>
+            </div>
+        </div>
+            
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <!--<video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/test_sweep_1e-4_5000_more_low.mp4" type="video/mp4" />
+                </video>-->
+		<h4>
+			<u>Object Discovery:</u>
+		</h4>
+		<p class="text-justify">
+		Concepts discovered by our method in COCO 2014 train set that can be evaluated using ground truth annotations 
+		</p>
+		<image src="../images/final_vis_new.png" class="img-responsive" alt="Object Discovery results" />
+		<p class="text-justify">
+		Concepts discovered by our method in COCO 2014 train set that cannot be evaluated using ground truth annotations 
+		</p>
+		<image src="../images/unlabeled.png" class="img-responsive" alt="Object Discovery results" />
+
+		<h4>
+			<u>Object Detection:</u>
+		</h4>
+		<p class="text-justify">
+		To demonstrate performance of our approach on unseendata, we evaluate detectors obtained from our approach onCOCO-minival.  The detectors display a lot of intra-class variation. We achieve the highest AP of∼17.38%forthe bear class and a lowest mAP of0.08%for traffic lights.
+		</p>
+		<image src="../images/det_final_vis.png" class="img-responsive" alt="Object Discovery results" />
+
+            </div>
+        </div>
+
+
+        <!--<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    Random Fourier features were first proposed in the seminal work of <a href="https://people.eecs.berkeley.edu/~brecht/papers/07.rah.rec.nips.pdf">Rahimi & Recht (2007)</a>.
+                </p>
+                <p class="text-justify">
+                    The neural tangent kernel was introduced in <a href="https://arxiv.org/abs/1806.07572">Jacot et al. (2018)</a>. 
+                </p>
+                <p class="text-justify">
+                    We relied on the excellent open source projects <a href="https://github.com/google/jax">JAX</a> and <a href="https://github.com/google/neural-tangents">Neural Tangents</a> for training networks and calculating neural tangent kernels.
+                </p>
+                <p class="text-justify">
+                    In own previous work on <em>neural radiance fields</em> (<a href="https://www.matthewtancik.com/nerf">NeRF</a>), we were surprised to find that a "positional encoding" of input coordinates helped networks learn significantly higher frequency details, inspiring our exploration in this project.
+                </p>
+                <p class="text-justify">
+                    <a href="https://vsitzmann.github.io/siren/">Sitzmann et al. (2020)</a> concurrently introduced <em>sinusoidal representation networks</em> (SIREN), demonstrating exciting progress in coordinate based MLP representations by using a sine function as the nonlinearity between <em>all</em> layers in the network. This allows the MLPs to accurately represent first and second order derivatives of low dimensional signals. 
+                </p>
+                <p class="text-justify">
+                    You can find code to replicate all our experiments on <a href="https://github.com/tancik/fourier-feature-networks">GitHub</a>, but if you just want to try experimenting with the images used on this webpage you can find the uncompressed originals here: 
+                    <a href="img/lion_orig.png">Lion</a>,
+                    <a href="img/greece_orig.png">Greece</a>,
+                    <a href="img/fox_orig.png">Fox</a>.
+                </p>
+            </div>
+        </div>-->
+        
+
+<!--         <div class="row" id="header_img">
+            <figure class="col-md-8 col-md-offset-2">
+                <image src="img/llff_teaser.png" class="img-responsive" alt="overview">
+                <figcaption>
+                </figcaption>
+            </figure>
+                
+        </div> -->
+            
+        <!--<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{tancik2020fourfeat,
+    title={Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains},
+    author={Matthew Tancik and Pratul P. Srinivasan and Ben Mildenhall and Sara Fridovich-Keil and Nithin Raghavan and Utkarsh Singhal and Ravi Ramamoorthi and Jonathan T. Barron and Ren Ng},
+    journal={NeurIPS},
+    year={2020}
+}</textarea>
+                </div>
+            </div>
+        </div> -->
+
+        <!--<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank Ben Recht for advice, and Cecilia Zhang, Tim Brooks, Jascha Sohl-Dickstein, Preetum Nakkiran, and Serena Wang for their comments on the text.
+                    <br>
+                BM is funded by a Hertz Foundation Fellowship and acknowledges support from the Google BAIR Commons program. 
+                MT, PS, and SFK are funded by NSF Graduate Fellowships.
+                RR was supported in part by ONR grants N000141712687 and
+                N000142012529 and the Ronald L. Graham Chair.
+                RN was supported in part by an FHL Vive Center Seed Grant.
+                Google University Relations provided a generous donation of compute credits.
+                    <br>
+                </p>
+            </div>
+        </div> -->
+	<p align="right">
+		<font size="2">
+		The website template was borrowed from <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/index.html">Ben Mildenhall</a>.
+		</font>
+		</p>
+
+    </div>
+</body>
+</html>
+
+
