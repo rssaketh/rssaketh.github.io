@@ -103,14 +103,38 @@
                 <h3>
                     Qualitative Results
                 </h3>
-                <image src="../images/sup_viz1.png" class="img-responsive" alt="overview"><br>
+		<img class="asyncImage" src="../images/sup_viz1.png" data-src="../images/sup_viz1.jpg">
+		<img class="asyncImage" src="../images/sup_viz2.png" data-src="../images/sup_viz2.jpg">
+		<img class="asyncImage" src="../images/sup_viz3.png" data-src="../images/sup_viz3.jpg">
+		<img class="asyncImage" src="../images/sup_viz4.png" data-src="../images/sup_viz4.jpg">
+		<img class="asyncImage" src="../images/sup_viz5.png" data-src="../images/sup_viz5.jpg">
+
+                <!--<image src="../images/sup_viz1.png" class="img-responsive" alt="overview"><br>
                 <image src="../images/sup_viz2.png" class="img-responsive" alt="overview"><br>
                 <image src="../images/sup_viz3.png" class="img-responsive" alt="overview"><br>
                 <image src="../images/sup_viz4.png" class="img-responsive" alt="overview"><br>
-                <image src="../images/sup_viz5.png" class="img-responsive" alt="overview"><br>
+                <image src="../images/sup_viz5.png" class="img-responsive" alt="overview"><br>-->
             </div>
         </div>
 
+
+(() => {
+  'use strict';
+  // Page is loaded
+  const objects = document.getElementsByClassName('asyncImage');
+  Array.from(objects).map((item) => {
+    // Start loading image
+    const img = new Image();
+    img.src = item.dataset.src;
+    // Once image is loaded replace the src of the HTML element
+    img.onload = () => {
+      item.classList.remove('asyncImage');
+      return item.nodeName === 'IMG' ? 
+        item.src = item.dataset.src :        
+        item.style.backgroundImage = `url(${item.dataset.src})`;
+    };
+  });
+})();
 
            
 </body>
