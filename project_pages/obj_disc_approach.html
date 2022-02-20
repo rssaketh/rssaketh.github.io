@@ -1,0 +1,191 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "Times New Roman", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1200px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+	<title>Dual Memory</title>
+	<meta property="og:image" content="../images/teaser_try1.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="The Pursuit of Knowledge: Discovering and Localizing novel concepts using Dual Memory" />
+	<meta property="og:description" content="Discovering novel objects in the wild using Dual memory" />
+
+	<!-- Get from Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src=""></script> 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-75863369-6');
+	</script>
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:30px">The Pursuit of Knowledge:<br> Discovering and Localizing novel concepts using Dual Memory </br></span>
+		<br>
+		<br>
+		<span style="font-size:24">ICCV 2021</span>
+		<br>
+	</center>
+	<hr>
+	<center><h1>Approach</h1></center>
+		<table align=center width=850px>
+			<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:700px" src="../images/dual_memory.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+	<table align=center width=1000px>
+		<tr>
+			<td>
+ This framework consists of three main modules: encoding, storage, and retrieval, prudently interacting with each other. To begin with, the encoding module extracts image regions and their representations; the storage module has memory slots that represent concepts and that are constantly being updated. The retrieval module takes as input, the storage and the output from the encoding modules, and outputs a decision which updates the memory slots. Finally a memory consolidation operation is performed to amalgamate the objects discovered in <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> to <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />.
+                </p>
+
+<p class="text-justify">
+<strong>Encoding:</strong> The goal of the encoding module is to process an input image and extract representations to be used by subsequent discovery pipeline.
+<!--Our encoding module is an object detector, Faster R-CNN, trained on a dataset consisting of a set of known objects. Given an image, we use proposals/boxes from a region proposal network and their corresponding ConvNet features from the classification head (referred to as encoded representation), for the subsequent discovery. This module is akin to the encoding process in human memory, which converts sensory inputs to representations to be used by other processes. -->
+</p>
+<!--<h4 align=left>Storage</h4>-->
+<p class="text-justify">
+<strong>Storage:</strong> The storage module consists of two memory blocks: <em>Semantic</em> (<image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />) and <em>Working</em> Memory (<image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />).
+<!--<image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" /> serves the purpose of storing the prior and discovered concepts, and is initialized with prior knowledge. It resembles the human long-term memory in that aspect, which stores prior or acquired knowledge. On the other hand, <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> is used to temporarily store and manipulate representations of recently encountered objects, which can potentially be discovered, and is null initialized. The working memory resembles the short-term memory. -->
+</p>
+<!--<p class="text-justify"> Both the memory modules are composed of slots, where each slot represents the regions belonging to it from the data encountered so far. A <strong>slot's representation</strong> is computed using encoded representations of all regions belonging to the particular slot. Whenever we encounter a region that's deemed `novel', a new slot is allocated for this region in working memory, <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />. If we encounter more regions that are associated with this slot, its slot representation is updated, and eventually consolidated with the semantic memory, <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" /> . We then consider this slot of a discovered object as known and mine for newer objects. The retrieval module handles the decisions that associate regions with slots. </p>-->
+
+<p class="text-justify">
+<strong>Retrieval:</strong> The retrieval module is the center for making decisions for our method. 
+It takes as input the current state of storage and the encoded representation (of the region being considered) from the encoding module, and makes a decision if the region belongs to 1) a known object (results in 'Update <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />' in figure), 2) previously encountered novel object ('Update <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />') or 3) Newly encountered novel object ('Create <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" />').
+<p class="text-justify">
+<strong>Memory Consolidation:</strong>
+<!--The Working Memory <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> is responsible for discovering new concepts, and after consistent/repeated occurrence of these concepts, they should be amalgamated with the Semantic memory <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />. Towards this, -->
+We propose a memory consolidation step, where representations formed in the Working Memory are added to the Semantic Memory, extending our repertoire of known categories.
+<!--During the memory consolidation, the <image style='display:inline;' src="../images/Mw.png" class="img-responsive" alt="Mw" /> is reinitialized to its original state (\ie, null), and the number of slots increase in <image style='display:inline;' src="../images/Ms.png" class="img-responsive" alt="Ms" />.</p>-->
+			</td>
+		</tr>
+	</table>
+
+		<br>
+		<br>
+
+</body>
+</html>

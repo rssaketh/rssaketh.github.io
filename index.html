@@ -59,12 +59,13 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+	 <!-- saod -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='dualrefl_image'>
-                  <img src='images/dual_memory.png' height="90" width="160"></div>
-                <img src='images/dual_memory.png' height="90" width="160">
+                  <img src='images/saod/saod_pipeline.png' height="90" width="160"></div>
+                <img src='images/saod/saod_teaser.png' height="90" width="160">
               </div>
               <script type="text/javascript">
                 function dualrefl_start() {
@@ -79,6 +80,43 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <!--<a href="">-->
+                <papertitle>Sparsely annotated object detection: A region-based Semi-supervised approach</papertitle>
+              <!--</a>-->
+              <br>
+              <strong>Sai Saketh Rambhatla*</strong>,
+              <a href="http://www.cs.umd.edu/~sakshams/">Saksham Suri*</a>,
+              <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>,
+              <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
+              <br>
+              <em>Under Review</em>  
+              <br>
+              <a href="https://arxiv.org/abs/2201.04620">arXiv</a>
+              <p></p>
+              <p>
+                Improve performance of detectors trained using missing annotations by posing the problem as region-based semi-supervised learning.
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="newrefl_stop()" onmouseover="newrefl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='newrefl_image'>
+                  <img src='images/dual_memory.png' height="90" width="160"></div>
+                <img src='images/teaser_try1.png' height="90" width="160">
+              </div>
+              <script type="text/javascript">
+                function newrefl_start() {
+                  document.getElementById('newrefl_image').style.opacity = "1";
+                }
+
+                function newrefl_stop() {
+                  document.getElementById('newrefl_image').style.opacity = "0";
+                }
+                newrefl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <!--<a href="">-->
                 <papertitle>The Pursuit of Knowledge: Discovering and Localizing new concepts using Dual Memory</papertitle>
               <!--</a>-->
               <br>
@@ -88,8 +126,9 @@
               <br>
               <em>ICCV</em>, 2021  
               <br>
-              <a href="project_pages/obj_disc.html">Project Page</a> |
-              <a href="https://arxiv.org/abs/2105.01652">arXiv</a>
+              <a href="project_pages/obj_disc_new.html">Project Page</a> |
+              <a href="https://arxiv.org/abs/2105.01652">arXiv</a> |
+	      <a href='./data/ICCV2021_PoHa_poster.pdf'>Poster</a>
               <p></p>
               <p>
                 Equip machines with capabilities to automatically discover and learn models for new categories from a large unlabeled dataset.
@@ -101,7 +140,7 @@
               <div class="one">
                 <div class="two" id='ganrefl_image'>
                   <img src='images/Teaser_v2.png' height="90" width="160"></div>
-                <img src='images/Teaser_v2.png' height="90" width="160">
+                <img src='images/gan_pipeline.png' height="60" width="160">
               </div>
               <script type="text/javascript">
                 function ganrefl_start() {
@@ -134,45 +173,49 @@
               </p>
             </td>
           </tr> 
-          <tr onmouseout="actrefl_stop()" onmouseover="actrefl_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;height:125%;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='actrefl_image'>
-                  <img src='images/action.png' height="90" width="160"></div>
-                <img src='images/action.png' height="90" width="160">
+                <!--<div class="two" id='nlt_image'><video  width=100% height=100% muted autoplay loop>-->
+		<div class="two" id='nlt_start'>
+		  <img src='images/few_shot/few_shot.png', height="80" width="160"></div>
+                <!--<source src="images/nlt_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>-->
+                <img src='images/few_shot/few_shot.png' height="80" width="160">
               </div>
               <script type="text/javascript">
-                function actrefl_start() {
-                  document.getElementById('actrefl_image').style.opacity = "1";
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
                 }
 
-                function actrefl_stop() {
-                  document.getElementById('actrefl_image').style.opacity = "0";
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
                 }
-                actrefl_stop()
+                nlt_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <!--<a href="">-->
-                <papertitle> Recognizing Transforming Actions via Object State Transformations. </papertitle>
+                <papertitle>Self-Denoising neural networks for few shot learning</papertitle>
               <!--</a>-->
               <br>
-	      Nirat Saini,
-	      <a href="http://www.cs.umd.edu/~gauravsh/">Gaurav Shrivastava</a>,
+              <a href="https://scholar.google.com/citations?user=0QUSJWkAAAAJ&hl=en">Steven Schwarcz</a>,
               <strong>Sai Saketh Rambhatla</strong>,
-              <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
+              <a href="https://www.merl.com/people/mjones/">Rama Chellappa</a>
               <br>
-              <em>Under Submission</em>, 2020  
-              <br>
-              <!--<a href="project_pages/obj_disc.html">project page</a>-->
-              <!--<a href="https://arxiv.org/abs/2010.00702">arXiv</a>-->
+              <em>Under Review</em><br>
+              <a href=""https://arxiv.org/abs/2110.13386>arXiv</a>
+
+              <!--<br>-->
+              <!--<a href="http://nlt.csail.mit.edu/">project page</a> /
+              <a href="https://arxiv.org/abs/2008.03806">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=OGEnCWZihHE">video</a>-->
               <p></p>
-              <p>
-                Leverage Object state transformation to recognize transforming actions.
-              </p>
+              <p>Novel architecture based on denoising auto-encoders to improve few shot learning.  </p>
             </td>
           </tr> 
-
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;height:125%;width:25%;vertical-align:middle">
               <div class="one">
@@ -197,23 +240,63 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <!--<a href="">-->
-                <papertitle>To Boost or not to Boost: On the limits of Boosted Neural Networks</papertitle>
+                <papertitle>An Empirical analysis of Boosting Deep Networks</papertitle>
               <!--</a>-->
               <br>
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://www.merl.com/people/mjones/">Michael Jones</a>,
               <a href="https://www.merl.com/people/mjones/">Rama Chellappa</a>
               <br>
-              <em>Under submission to Neurocomputing</em>, 2020  
+              <em>Under submission to IJCNN</em>, 2022  
+              <a href="https://arxiv.org/abs/2107.13600">arXiv</a>
+
               <!--<br>-->
               <!--<a href="http://nlt.csail.mit.edu/">project page</a> /
               <a href="https://arxiv.org/abs/2008.03806">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=OGEnCWZihHE">video</a>-->
               <p></p>
-              <p>Theoretical arguments and empirical evidence that a single large neural network is usually more accurate than a boosted ensemble of neural networks with the same number of total parameters  </p>
+              <p>Empirical evidence that a single large neural network is usually more accurate than a boosted ensemble of neural networks with the same number of total parameters  </p>
             </td>
           </tr> 
 
+          <tr onmouseout="nlfw_stop()" onmouseover="nlfw_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nlrefl_image'>
+                  <img src='images/nl_ret/reid.png' height="90" width="160"></div>
+                <img src='images/nl_ret/nl_ret.png' height="90" width="160">
+              </div>
+              <script type="text/javascript">
+                function nlfw_start() {
+                  document.getElementById('nlrefl_image').style.opacity = "1";
+                }
+
+                function nlfw_stop() {
+                  document.getElementById('nlrefl_image').style.opacity = "0";
+                }
+                nlfw_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <!--<a href="">-->
+                <papertitle>Towards Accurate Visual and Natural language-based vehicle retrieval systems.</papertitle>
+              <!--</a>-->
+              <br>
+              <a href="https://scholar.google.com/citations?user=1HMdTEsAAAAJ&hl=en">Pirazh Khorramshahi*</a>,
+              <strong>Sai Saketh Rambhatla*</strong>,
+	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
+              <br>
+              <em>NVIDIA AI City Challenge, CVPR Workshops</em>, 2021  
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2021W/AICity/papers/Khorramshahi_Towards_Accurate_Visual_and_Natural_Language-Based_Vehicle_Retrieval_Systems_CVPRW_2021_paper.pdf">Paper</a> 
+              <!--<a href="https://nerf-w.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2008.02268">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=yPKIxoN2Vf0">video</a>
+              <p></p>-->
+              <p>Proposed a real-time system for image-based vehicle re-identification and natural language-based vehicle retrieval.</p>
+            </td>
+          </tr> 
           <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -264,8 +347,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
-                  <img src='images/func_gen.png' width="160"></div>
-                <img src='images/func_gen.png' width="160">
+                  <img src='images/func_gen_system_fig.png' height="90" width="160"></div>
+                <img src='images/func_gen.png' height="90" width="160">
               </div>
               <script type="text/javascript">
                 function ff_start() {
@@ -325,7 +408,7 @@
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>,
 	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
               <br>
-              <em>arxiv</em>, 2020 <!--&nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>-->
+              <em>arxiv</em> <!--&nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>-->
               <br>
               <a href="https://ankanbansal.com/hoi.html">project page</a> /
               <a href="https://arxiv.org/pdf/2004.04851.pdf">arXiv</a> 
