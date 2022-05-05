@@ -1,8 +1,7 @@
-@InProceedings{Rambhatla_2021_ICCV,
-    author    = {Rambhatla, Sai Saketh and Chellappa, Rama and Shrivastava, Abhinav},
-    title     = {The Pursuit of Knowledge: Discovering and Localizing Novel Categories Using Dual Memory},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2021},
-    pages     = {9153-9163}
+@article{Rambhatla2021ThePO,
+  title={The Pursuit of Knowledge: Discovering and Localizing Novel Categories using Dual Memory},
+  author={Sai Saketh Rambhatla and Ramalingam Chellappa and Abhinav Shrivastava},
+  journal={2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2021},
+  pages={9133-9143}
 }
