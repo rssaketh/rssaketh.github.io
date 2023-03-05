@@ -50,14 +50,53 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, machine and deep learning.
-                Much of my research is about training models with little to no supervision.
+                I'm interested in computer vision and deep learning. During my Ph.D. I worked on object tracking, person re-identification, object detection and discovery and multi-modal inconsistency detection tasks.
+                Much of my research was on training models with improper supervision.
                 <!--Representative papers are <span class="highlight">highlighted</span>.-->
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+	 <!-- most -->
+          <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dualrefl_image'>
+                  <img src='images/most/most_pipeline.png' height="90" width="160"></div>
+                <img src='images/most/most_teaser.png' height="90" width="160">
+              </div>
+              <script type="text/javascript">
+                function dualrefl_start() {
+                  document.getElementById('dualrefl_image').style.opacity = "1";
+                }
+
+                function dualrefl_stop() {
+                  document.getElementById('dualrefl_image').style.opacity = "0";
+                }
+                dualrefl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <!--<a href="">-->
+                <papertitle>MOST: Multiple Object localization with Self-supervised Transformers for object discovery.</papertitle>
+              <!--</a>-->
+              <br>
+              <strong>Sai Saketh Rambhatla</strong>,
+              <a href="https://imisra.github.io">Ishan Misra</a>,
+              <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>,
+              <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
+              <br>
+              <em>Under Review</em>  
+              <br>
+              <!--<a href="https://arxiv.org/abs/2201.04620">arXiv</a>-->
+              <p></p>
+              <p>
+                Localize multiple objects in a real world images in an unsupervised fashion without any training using Self-supervised Transformers.
+              </p>
+            </td>
+          </tr>
 
 	 <!-- saod -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
