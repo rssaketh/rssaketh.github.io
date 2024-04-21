@@ -16,6 +16,19 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/Saketh1.jpeg">
+  <style>
+    .scrollable-list {
+      max-height: 600px; /* Adjust the height as needed */
+      overflow-y: auto; /* Add a vertical scrollbar when needed */
+    }
+.container {
+  text-align: center;
+}
+tr {
+  display: flex;
+  align-items: center;
+}
+  </style>
 </head>
 
 <body>
@@ -50,14 +63,158 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision and deep learning. During my Ph.D. I worked on object tracking, person re-identification, object detection and discovery and multi-modal inconsistency detection tasks.
-                Much of my research was on training models with improper supervision.
+                At Meta, I spent most of my time working on Generative AI problems. My research has resulted in state-of-the-art image and video generation models and received wide media coverage. During my Ph.D. I worked on object tracking, person re-identification, object detection and discovery and multi-modal inconsistency detection tasks.
                 <!--Representative papers are <span class="highlight">highlighted</span>.-->
               </p>
+	     <p> <font color="red">I'm on the job market this year and am actively looking for Research Scientist positions. Please feel free to reach out to me if I'm a good fit at your organization</font></p>
+
             </td>
           </tr>
         </tbody></table>
+	<div class='scrollable-list'>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle;">
+          <heading>Publications</heading>
+        </td>
+      </tr>
+	<!--<tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+	<heading>Publications</heading></td></tr>-->
+	 <!-- selfeval -->
+<tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;display: flex; align-items: center;">
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
+        <img src='images/selfeval/teaser1.png' height="70" width="180" style="vertical-align:middle;"></div>
+	        <img src='images/selfeval/teaser1.png' height="70" width="180" style="vertical-align:middle;">
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      function dualrefl_start() {
+        document.getElementById('dualrefl_image').style.opacity = "1";
+      }
+
+      function dualrefl_stop() {
+        document.getElementById('dualrefl_image').style.opacity = "0";
+      }
+      dualrefl_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle;">
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+      <!--<a href="">-->
+      <papertitle style="margin-bottom: 2px;">SelfEval: Leveraging the discriminative nature of generative models for evaluation.</papertitle>
+      <!--</a>-->
+      <div style="margin-bottom: 2px;">
+        <strong>Sai Saketh Rambhatla</strong>,
+        <a href="https://imisra.github.io">Ishan Misra</a>
+      </div>
+      <div style="margin-bottom: 2px;">
+        <em>Under Submission</em>
+      </div>
+      <div style="margin-bottom: 2px;">
+        <!--<a href="most.html">Project Page</a> | -->
+        <a href="https://arxiv.org/abs/2311.10708">arXiv</a>
+      </div>
+      <!--<a href='https://github.com/rssaketh/MOST'>Code</a> |
+      <a href='./data/most_poster.pdf'>Poster</a> -->
+      <p>
+        Repurpose generative models as discriminative models to evaluate generative performance.
+      </p>
+    </div>
+  </td>
+</tr>
+	 <!-- EMU Video -->
+          <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+	      <div class="container">
+              <div class="one">
+                <div class="two" id='dualrefl_image'>
+                  <img src='images/emu_video/teaser.gif' height="140" width="140"></div>
+                <img src='images/emu_video/teaser.gif' height="140" width="140">
+              </div></div>
+              <script type="text/javascript">
+                function dualrefl_start() {
+                  document.getElementById('dualrefl_image').style.opacity = "1";
+                }
+
+                function dualrefl_stop() {
+                  document.getElementById('dualrefl_image').style.opacity = "0";
+                }
+                dualrefl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <!--<a href="">-->
+                <papertitle>Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning.</papertitle>
+              <!--</a>-->
+              <br>
+	      <a href='https://rohitgirdhar.github.io'>Rohit Girdhar*<sup><span>&#8224;</span></sup></a>,
+	      <a href='https://ai.meta.com/people/mannat-singh/'>Mannat Singh*<sup><span>&#8224;</span></sup></a>,
+	      <a href='https://www.robots.ox.ac.uk/~abrown/'>Andrew Brown*</a>,
+	      <a href='https://scholar.google.com/citations?user=XTaVGqYAAAAJ&hl=en'>Quentin Duval*</a>,
+	      <a href='https://scholar.google.com/citations?user=X0EXfT8AAAAJ&hl=en'>Samaneh Azadi*</a>,
+	      <strong>Sai Saketh Rambhatla</strong>,
+	      <a href='https://www.linkedin.com/in/akbar96'>Mian Akbar Shah</a>,
+	      <a href='https://xiyinmsu.github.io'>Xi Yin</a>,
+	      <a href='https://faculty.cc.gatech.edu/~parikh/'>Devi Parikh</a>,
+	      <a href='https://imisra.github.io'>Ishan Misra*</a>
+              <br>
+              <em>Under Submission</em>
+              <br>
+              <a href="https://emu-video.metademolab.com">Project Page</a> |
+              <a href="https://arxiv.org/abs/2311.10709">arXiv</a>
+              <p></p>
+              <p>
+		State-of-the-art Diffusion-based Text-to-Video generation method.
+              </p>
+            </td>
+          </tr>
+
+	 <!-- Instance Diffusion -->
+          <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dualrefl_image'>
+                  <img src='images/instance_diffusion/instdiff.png' height="120" width="160"></div>
+                <img src='images/instance_diffusion/tease2.png' height="120" width="160">
+              </div>
+              <script type="text/javascript">
+                function dualrefl_start() {
+                  document.getElementById('dualrefl_image').style.opacity = "1";
+                }
+
+                function dualrefl_stop() {
+                  document.getElementById('dualrefl_image').style.opacity = "0";
+                }
+                dualrefl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <!--<a href="">-->
+                <papertitle>InstanceDiffusion: Instance-level Control for Image Generation.</papertitle>
+              <!--</a>-->
+              <br>
+	      <a href="http://people.eecs.berkeley.edu/~xdwang/">Xudong Wang </a>,
+	      <a href="https://people.eecs.berkeley.edu/~trevor//">Trevor Darrell</a>,
+              <strong>Sai Saketh Rambhatla</strong>,
+	      <a href="https://rohitgirdhar.github.io">Rohit Girdhar</a>,
+              <a href="https://imisra.github.io">Ishan Misra</a>
+              <br>
+              <em>CVPR, 2024</em>
+              <br>
+              <a href="http://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/">Project Page</a> |
+              <a href="https://arxiv.org/abs/2402.03290">arXiv</a> |
+	      <a href='https://github.com/frank-xwang/InstanceDiffusion'>Code</a> |
+	      <!--<a href='./data/most_poster.pdf'>Poster</a> -->
+              <p></p>
+              <p>
+		A novel and effective method to enable precise instance-level control for text-to-image generation.
+              </p>
+            </td>
+          </tr>
 
 	 <!-- most -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
@@ -540,41 +697,59 @@
             </td>
           </tr> 
         </tbody></table>
+	</div>
+	<br>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Service</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/service.png"></td>
-            <td width="75%" valign="center">
-              <p>Reviewer, Pattern Recognition Letters</p>
-              <p>Reviewer, IEEE Access</a>
-	      <p>Reviewer, ECCV 2020, 2022</a>
-	      <p>Reviewer, ICCV 2021, 2023</a>
-	      <p>Reviewer, Neurips, 2023</a>
-	      <p>Reviewer, ICLR, 2023</a>
-	      <p>Reviewer, CVPR 2021, 2022, 2023</a>
-	      <p>Reviewer, AAAI 2021, 2022</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/umd_ece.jpeg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <p>Graduate Teaching Assistant, ENEE222 Fall 2016</p>
-              <p>Graduate Teaching Assistant, ENEE324 Spring 2017</p>
-              <p>Graduate Teaching Assistant, ENEE425 Fall 2017</p>
-              <p>Graduate Teaching Assistant, ENEE630 Fall 2017</p>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tbody>
+    <tr>
+      <td>
+        <heading>Service</heading>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" align="center" border="0" cellpadding="20">
+  <tbody>
+    <tr>
+      <td>
+        <div style="display: flex; align-items: center;">
+          <div style="padding-right: 20px;">
+            <img src="images/service.png">
+          </div>
+          <div>
+	    <p>Reviewer, International Journal of Computer Vision</p>
+            <p>Reviewer, Pattern Recognition Letters</p>
+            <p>Reviewer, IEEE Access</p>
+            <p>Reviewer, ECCV 2020, 2022, 2024</p>
+            <p>Reviewer, ICCV 2021, 2023</p>
+            <p>Reviewer, Neurips, 2023</p>
+            <p>Reviewer, ICLR, 2023, 2024</p>
+	    <p>Reviewer, ICML 2024 </p>
+            <p>Reviewer, CVPR 2021, 2022, 2023, 2024</p>
+            <p>Reviewer, AAAI 2021, 2022</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: flex; align-items: center;">
+          <div style="padding-right: 20px;">
+            <img src="images/umd_ece.jpeg" alt="cs188">
+          </div>
+          <div>
+            <p>Graduate Teaching Assistant, ENEE222 Fall 2016</p>
+            <p>Graduate Teaching Assistant, ENEE324 Spring 2017</p>
+            <p>Graduate Teaching Assistant, ENEE425 Fall 2017</p>
+            <p>Graduate Teaching Assistant, ENEE630 Fall 2017</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-            </td>
-          </tr>
-        </tbody></table>
 	<!-- Website Credits -->
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tbody>
