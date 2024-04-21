@@ -28,6 +28,18 @@ tr {
   display: flex;
   align-items: center;
 }
+ /* Style adjustments for mobile devices */
+  @media screen and (max-width: 600px) {
+    /* Reduce padding between image and text */
+    .mobile-layout td {
+      padding: 10px;
+    }
+    /* Make images smaller */
+    .mobile-layout img {
+      max-width: 100px; /* Adjust the maximum width as needed */
+      height: auto;
+    }
+  }
   </style>
 </head>
 
@@ -745,7 +757,8 @@ tr {
 	</div>
 	<br>
 
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<!-- Table for service -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" class="mobile-layout">
   <tbody>
     <tr>
       <td>
@@ -754,8 +767,11 @@ tr {
     </tr>
   </tbody>
 </table>
-<table width="100%" align="center" border="0" cellpadding="20">
+
+<!-- Table for reviewer info -->
+<table width="100%" align="center" border="0" cellpadding="20" class="mobile-layout">
   <tbody>
+    <!-- Row for reviewer of journals -->
     <tr>
       <td>
         <div style="display: flex; align-items: center;">
@@ -763,20 +779,21 @@ tr {
             <img src="images/service.png">
           </div>
           <div>
-	    <p>Reviewer, International Journal of Computer Vision</p>
+            <p>Reviewer, International Journal of Computer Vision</p>
             <p>Reviewer, Pattern Recognition Letters</p>
             <p>Reviewer, IEEE Access</p>
             <p>Reviewer, ECCV 2020, 2022, 2024</p>
             <p>Reviewer, ICCV 2021, 2023</p>
             <p>Reviewer, Neurips, 2023</p>
             <p>Reviewer, ICLR, 2023, 2024</p>
-	    <p>Reviewer, ICML 2024 </p>
+            <p>Reviewer, ICML 2024</p>
             <p>Reviewer, CVPR 2021, 2022, 2023, 2024</p>
             <p>Reviewer, AAAI 2021, 2022</p>
           </div>
         </div>
       </td>
     </tr>
+    <!-- Row for graduate teaching assistant info -->
     <tr>
       <td>
         <div style="display: flex; align-items: center;">
