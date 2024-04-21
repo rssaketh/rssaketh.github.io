@@ -58,9 +58,10 @@ tr {
             </td>
           </tr>
         </tbody></table>
+	<div style="width: 100%; margin: 0 auto;">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:20px;vertical-align:middle">
               <heading>Research</heading>
               <p>
                 At Meta, I spent most of my time working on Generative AI. My research has resulted in state-of-the-art image and video generation models and received wide media coverage. During my Ph.D. I worked on object tracking, person re-identification, object detection and discovery and multi-modal inconsistency detection tasks.
@@ -70,17 +71,21 @@ tr {
 
             </td>
           </tr>
-        </tbody></table>
-	<div class='scrollable-list'>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        </tbody></table></div>
+
+<div style="width:100%; margin-right:auto; margin-left:auto;">
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle;">
           <heading>Publications</heading>
         </td>
       </tr>
-	<!--<tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-	<heading>Publications</heading></td></tr>-->
+    </tbody>
+  </table>
+</div>
+	<div class='scrollable-list'>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	 <!-- selfeval -->
 <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
   <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;display: flex; align-items: center;">
@@ -129,9 +134,8 @@ tr {
 	 <!-- EMU Video -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-	      <div class="container">
-              <div class="one">
-                <div class="two" id='dualrefl_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/emu_video/teaser.gif' height="140" width="140"></div>
                 <img src='images/emu_video/teaser.gif' height="140" width="140">
               </div></div>
@@ -146,11 +150,13 @@ tr {
                 dualrefl_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
+            <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning.</papertitle>
               <!--</a>-->
-              <br>
+		<div style="margin-bottom: 2px;">
 	      <a href='https://rohitgirdhar.github.io'>Rohit Girdhar*<sup><span>&#8224;</span></sup></a>,
 	      <a href='https://ai.meta.com/people/mannat-singh/'>Mannat Singh*<sup><span>&#8224;</span></sup></a>,
 	      <a href='https://www.robots.ox.ac.uk/~abrown/'>Andrew Brown*</a>,
@@ -161,23 +167,26 @@ tr {
 	      <a href='https://xiyinmsu.github.io'>Xi Yin</a>,
 	      <a href='https://faculty.cc.gatech.edu/~parikh/'>Devi Parikh</a>,
 	      <a href='https://imisra.github.io'>Ishan Misra*</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px;">
               <em>Under Submission</em>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px;">
               <a href="https://emu-video.metademolab.com">Project Page</a> |
               <a href="https://arxiv.org/abs/2311.10709">arXiv</a>
-              <p></p>
+		</div>
               <p>
 		State-of-the-art Diffusion-based Text-to-Video generation method.
               </p>
+		</div>
             </td>
           </tr>
 
 	 <!-- Instance Diffusion -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='dualrefl_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/instance_diffusion/instdiff.png' height="120" width="160"></div>
                 <img src='images/instance_diffusion/tease2.png' height="120" width="160">
               </div>
@@ -193,34 +202,39 @@ tr {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>InstanceDiffusion: Instance-level Control for Image Generation.</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
 	      <a href="http://people.eecs.berkeley.edu/~xdwang/">Xudong Wang </a>,
 	      <a href="https://people.eecs.berkeley.edu/~trevor//">Trevor Darrell</a>,
               <strong>Sai Saketh Rambhatla</strong>,
 	      <a href="https://rohitgirdhar.github.io">Rohit Girdhar</a>,
               <a href="https://imisra.github.io">Ishan Misra</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>CVPR, 2024</em>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="http://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/">Project Page</a> |
               <a href="https://arxiv.org/abs/2402.03290">arXiv</a> |
 	      <a href='https://github.com/frank-xwang/InstanceDiffusion'>Code</a> |
 	      <!--<a href='./data/most_poster.pdf'>Poster</a> -->
-              <p></p>
+              </div>
               <p>
 		A novel and effective method to enable precise instance-level control for text-to-image generation.
               </p>
+		</div>
             </td>
           </tr>
 
 	 <!-- most -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='dualrefl_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/most/most_pipeline.png' height="90" width="160"></div>
                 <img src='images/most/teaser_nohuman.png' height="90" width="160">
               </div>
@@ -236,33 +250,38 @@ tr {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>MOST: Multiple Object localization with Self-supervised Transformers for object discovery.</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://imisra.github.io">Ishan Misra</a>,
               <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>,
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>ICCV, 2023</em>  <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="most.html">Project Page</a> |
               <a href="https://arxiv.org/abs/2304.05387">arXiv</a> |
 	      <a href='https://github.com/rssaketh/MOST'>Code</a> |
 	      <a href='./data/most_poster.pdf'>Poster</a> 
-              <p></p>
+              </div>
               <p>
                 Localize multiple objects in a real world images in an unsupervised fashion without any training using Self-supervised Transformers.
               </p>
+		</div>
             </td>
           </tr>
 
 	 <!-- saod -->
           <tr onmouseout="saod_stop()" onmouseover="saod_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='saod_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/saod/saod_pipeline.png' height="90" width="160"></div>
                 <img src='images/saod/saod_teaser.png' height="90" width="160">
               </div>
@@ -278,31 +297,36 @@ tr {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining.</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="http://www.cs.umd.edu/~sakshams/">Saksham Suri*</a>,
               <strong>Sai Saketh Rambhatla*</strong>,
               <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>,
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>ICCV, 2023</em>  
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://www.cs.umd.edu/~sakshams/SparseDet/index.html">Project Page</a> |
               <a href="https://arxiv.org/abs/2201.04620">arXiv</a> |
 	      <a href='https://github.com/saksham-s/SparseDet'>Code</a> |
 	      <a href='data/sparsedet_poster.pdf'>Poster</a> 
-              <p></p>
+              </div>
               <p>
                 Improve performance of detectors trained using missing annotations by posing the problem as region-based semi-supervised learning.
               </p>
+		</div>
             </td>
           </tr>
           <tr onmouseout="newrefl_stop()" onmouseover="newrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='newrefl_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/dual_memory.png' height="90" width="160"></div>
                 <img src='images/teaser_try1.png' height="90" width="160">
               </div>
@@ -318,30 +342,35 @@ tr {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>The Pursuit of Knowledge: Discovering and Localizing new concepts using Dual Memory</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>,
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>ICCV</em>, 2021  
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="project_pages/obj_disc_new.html">Project Page</a> |
               <a href="https://arxiv.org/abs/2105.01652">arXiv</a> |
 	      <a href="https://github.com/learn2phoenix/cvpr22_vplow_ow">Code</a> |
 	      <a href='./data/ICCV2021_PoHa_poster.pdf'>Poster</a>
-              <p></p>
+              </div>
               <p>
                 Equip machines with capabilities to automatically discover and learn models for new categories from a large unlabeled dataset.
               </p>
+		</div>
             </td>
           </tr> 
           <tr onmouseout="ganrefl_stop()" onmouseover="ganrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ganrefl_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/Teaser_v2.png' height="90" width="160"></div>
                 <img src='images/gan_pipeline.png' height="60" width="160">
               </div>
@@ -357,31 +386,35 @@ tr {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle> Towards Discovery and Attribution of Open-world GAN Generated Images. </papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
 	      <a href="http://www.cs.umd.edu/~sakshams/">Saksham Suri*</a>,
 	      Sharath Girish*,
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>ICCV</em>, 2021  
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="http://www.cs.umd.edu/~sakshams/project_page/gan_wild.html">Project Page</a> |
               <a href="https://arxiv.org/abs/2105.04580">arXiv</a>
-              <p></p>
+              </div>
               <p>
                 Automatically discover and attribute open-world GAN images.
               </p>
+		</div>
             </td>
           </tr> 
 
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;height:125%;width:25%;vertical-align:middle">
-              <div class="one">
-                <!--<div class="two" id='nlt_image'><video  width=100% height=100% muted autoplay loop>-->
-		<div class="two" id='nlt_start'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
 		  <img src='images/few_shot/few_shot.png', height="80" width="160"></div>
                 <!--<source src="images/nlt_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -400,29 +433,26 @@ tr {
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
               <!--<a href="">-->
                 <papertitle>Self-Denoising neural networks for few shot learning</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="https://scholar.google.com/citations?user=0QUSJWkAAAAJ&hl=en">Steven Schwarcz</a>,
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href=""https://arxiv.org/abs/2110.13386>arXiv</a>
-
-              <!--<br>-->
-              <!--<a href="http://nlt.csail.mit.edu/">project page</a> /
-              <a href="https://arxiv.org/abs/2008.03806">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=OGEnCWZihHE">video</a>-->
-              <p></p>
+		</div>
               <p>Novel architecture based on denoising auto-encoders to improve few shot learning.  </p>
+		</div>
             </td>
           </tr> 
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;height:125%;width:25%;vertical-align:middle">
-              <div class="one">
-                <!--<div class="two" id='nlt_image'><video  width=100% height=100% muted autoplay loop>-->
-		<div class="two" id='nlt_start'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
 		  <img src='images/boost.png', height="120" width="160"></div>
                 <!--<source src="images/nlt_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -440,31 +470,32 @@ tr {
                 nlt_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
+            <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>An Empirical analysis of Boosting Deep Networks</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://www.merl.com/people/mjones/">Michael Jones</a>,
               <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
-              <em>IJCNN</em>, 2022 <br> 
+              </div>
+		<div style="margin-bottom: 2px">
+              <em>IJCNN</em>, 2022 </div>
+		<div style="margin-bottom: 2px">
               <a href="../data/boosting.pdf">Paper</a>
+		</div>
 
-              <!--<br>-->
-              <!--<a href="http://nlt.csail.mit.edu/">project page</a> /
-              <a href="https://arxiv.org/abs/2008.03806">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=OGEnCWZihHE">video</a>-->
-              <p></p>
               <p>Empirical evidence that a single large neural network is usually more accurate than a boosted ensemble of neural networks with the same number of total parameters  </p>
+		</div>
             </td>
           </tr> 
 
           <tr onmouseout="nlfw_stop()" onmouseover="nlfw_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nlrefl_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/nl_ret/reid.png' height="90" width="160"></div>
                 <img src='images/nl_ret/nl_ret.png' height="90" width="160">
               </div>
@@ -480,34 +511,32 @@ tr {
               </script>
             </td>
 
-            <td style="padding:20px;width:75%;vertical-align:top">
+            <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>Towards Accurate Visual and Natural language-based vehicle retrieval systems.</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="https://scholar.google.com/citations?user=1HMdTEsAAAAJ&hl=en">Pirazh Khorramshahi*</a>,
               <strong>Sai Saketh Rambhatla*</strong>,
 	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>NVIDIA AI City Challenge, CVPR Workshops</em>, 2021  
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://openaccess.thecvf.com/content/CVPR2021W/AICity/papers/Khorramshahi_Towards_Accurate_Visual_and_Natural_Language-Based_Vehicle_Retrieval_Systems_CVPRW_2021_paper.pdf">Paper</a> 
-              <!--<a href="https://nerf-w.github.io/">project page</a> /
-              <a href="https://arxiv.org/abs/2008.02268">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=yPKIxoN2Vf0">video</a>
-              <p></p>-->
+		</div>
               <p>Proposed a real-time system for image-based vehicle re-identification and natural language-based vehicle retrieval.</p>
+		</div>
             </td>
           </tr> 
           <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <!--<div class="two" id='nerfw_image'><video  width=100% height=100% muted autoplay loop>-->
-		<div class="two" id='nerfw_start'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
 		  <img src='images/mcmt.png', height="120" width="160"></div>
-                <!--<source src="images/nerfw_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>-->
                 <img src='images/mcmt.png' height="120" width="160">
               </div>
               <script type="text/javascript">
@@ -521,11 +550,13 @@ tr {
                 nerfw_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
+            <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>Towards Real-Time Systems for Vehicle Re-Identification, Multi-Camera Tracking, and Anomaly Detection.</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="https://scholar.google.com/citations?user=X3cGY7wAAAAJ&hl=en">Neehar Peri*</a>,
               <a href="https://scholar.google.com/citations?user=1HMdTEsAAAAJ&hl=en">Pirazh Khorramshahi*</a>,
               <strong>Sai Saketh Rambhatla*</strong>,
@@ -533,22 +564,22 @@ tr {
               <a href="">Saumya Rawat</a>
               <a href="https://www.citi.sinica.edu.tw/pages/pullpull/index_en.html">Jun-Cheng Chen</a>,
 	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>NVIDIA AI City Challenge, CVPR Workshops</em>, 2020  
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w35/Peri_Towards_Real-Time_Systems_for_Vehicle_Re-Identification_Multi-Camera_Tracking_and_Anomaly_CVPRW_2020_paper.pdf">Paper</a> 
-              <!--<a href="https://nerf-w.github.io/">project page</a> /
-              <a href="https://arxiv.org/abs/2008.02268">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=yPKIxoN2Vf0">video</a>
-              <p></p>-->
+		</div>
               <p>Proposed a Real-Time system for Vehicle Re-identification, Multi-Camera Tracking, and Anomaly Detection in a network of traffic cameras.</p>
+		</div>
             </td>
           </tr> 
 
           <tr onmouseout="ff_stop()" onmouseover="ff_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/func_gen_system_fig.png' height="90" width="160"></div>
                 <img src='images/func_gen.png' height="90" width="160">
               </div>
@@ -563,29 +594,33 @@ tr {
                 ff_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
+            <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
               <!--<a href="">-->
                 <papertitle>Detecting Human-Object Interactions via Functional Generalization.</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="https://ankanbansal.com">Ankan Bansal</a>,
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>,
 	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>AAAI</em>, 2020 <!--&nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>-->
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://ankanbansal.com/hoi.html">project page</a> /
               <a href="https://arxiv.org/pdf/1904.03181.pdf">arXiv</a> 
-              <!--<a href="https://github.com/tancik/fourier-feature-networks">code</a>-->
-              <p></p>
+		</div>
               <p>Humans interact with functionally similar objects in a similar manner.</p>
+		</div>
             </td>
           </tr>  
           <tr onmouseout="ff2_stop()" onmouseover="ff2_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff2_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/spatial_priming.png' width="160"></div>
                 <img src='images/spatial_priming.png' width="160">
               </div>
@@ -600,31 +635,34 @@ tr {
                 ff2_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
               <!--<a href="">-->
                 <papertitle>Spatial Priming for Detecting Human-Object Interactions</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="https://ankanbansal.com">Ankan Bansal</a>,
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://abhinavsh.info">Abhinav Shrivastava</a>,
 	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>arxiv</em> <!--&nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>-->
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://ankanbansal.com/hoi.html">project page</a> /
               <a href="https://arxiv.org/pdf/2004.04851.pdf">arXiv</a> 
-              <br>
-              <p></p>
+              </div>
               <p>
 		A method for exploiting the spatial layout information of a human and an object for detecting HOIs in images.
               </p>
+		</div>
             </td>
           </tr>   
           <tr onmouseout="uflow_stop()" onmouseover="uflow_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='uflow_image'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/aaver.png' width="160"></div>
                 <img src='images/aaver.png' width="160">
               </div>
@@ -639,33 +677,36 @@ tr {
                 uflow_stop()
               </script>
             </td>
-            <td style="padding:10px;width:75%;vertical-align:top">
+              <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
               <!--<a href="">-->
                 <papertitle>A Dual-Path Model With Adaptive Attention for Vehicle Re-Identification</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <a href="https://scholar.google.com/citations?user=1HMdTEsAAAAJ&hl=en">Pirazh Khorramshahi*</a>,
 	      <a href="https://sites.google.com/view/amitumd/home?authuser=0">Amit Kumar</a>
               <a href="https://scholar.google.com/citations?user=X3cGY7wAAAAJ&hl=en">Neehar Peri</a>,
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://www.citi.sinica.edu.tw/pages/pullpull/index_en.html">Jun-Cheng Chen</a>,
 	      <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>ICCV</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://arxiv.org/pdf/1905.03397.pdf">arXiv</a>
-              <br>
-              <p></p>
+              </div>
               <p>
               Proposed a novel dual-path adaptive attention model for Vehicle re-identification.
               </p>
+		</div>
             </td>
           </tr>  
     
           <tr onmouseout="uflow_stop2()" onmouseover="uflow_start2()">
             <td style="padding:10px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='uflow_image2'>
+    <div class="one" style="height:100%; display:flex; justify-content: center; align-items: center;">
+      <div class="two" id='dualrefl_image' style="height:100%; display:flex; justify-content: center; align-items: center;">
                   <img src='images/person_reid.png' width="160"></div>
                 <img src='images/person_reid.png' width="160">
               </div>
@@ -680,20 +721,24 @@ tr {
                 uflow_stop2()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+              <td style="padding:20px;width:75%;vertical-align:middle">
+		    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
               <!--<a href="">-->
                 <papertitle>Body Part Alignment and Temporal Attention Pooling for Video-Based Person ReIdentification</papertitle>
               <!--</a>-->
-              <br>
+              <div style="margin-bottom: 2px">
               <strong>Sai Saketh Rambhatla</strong>,
               <a href="https://www.merl.com/people/mjones/">Michael Jones</a>
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <em>BMVC</em>, 2019 <!--&nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention)</strong></font>-->
-              <br>
+              </div>
+		<div style="margin-bottom: 2px">
               <a href="https://bmvc2019.org/wp-content/uploads/papers/0576-paper.pdf">Paper</a>
-              <br>
+              </div>
 
               <p> Training deep networks with the ability to align features achieves state of the art performance on Person Re-identification.</p>
+		</div>
             </td>
           </tr> 
         </tbody></table>
