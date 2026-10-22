@@ -168,8 +168,8 @@ def links(p):
     return ''.join(f'<a href="{esc(u)}">{esc(n)}</a>' for n, u in p['links'])
 
 
-def feat_card(p, big=False, eager=False):
-    return f'''        <a class="feat card reveal{' big' if big else ''}" href="{esc(p['links'][0][1])}" data-topics="{' '.join(p['topics'])}">
+def feat_card(p, big=False, eager=False, attrs=''):
+    return f'''        <a class="feat card reveal{' big' if big else ''}" href="{esc(p['links'][0][1])}"{attrs}>
           {media(p, eager)}
           <div class="body">
             <div class="meta">{tags(p)}</div>
@@ -201,7 +201,24 @@ def build():
              'Diffusion Autoencoders are Scalable Image Tokenizers', 'MotiF', 'InstanceDiffusion', 'MOST']
     featured = [by_title[k] for k in order if k in by_title]
     big = {'Movie Gen', 'Emu Video', 'InstanceDiffusion', 'MOST'}
-    feat_html = '\n'.join(feat_card(p, short_title(p['title']) in big, i < 2) for i, p in enumerate(featured))
+
+    # Each topic filter gets its own three highlights: featured papers first,
+    # then the newest papers in that topic.
+    highlights = {}
+    for t in TOPICS:
+        ranked = [p for p in featured if t in p['topics']] + [p for p in pubs if t in p['topics'] and p not in featured]
+        highlights[t] = ranked[:3]
+    cards = featured + [p for t in TOPICS for p in highlights[t] if p not in featured]
+    cards = list(dict.fromkeys(id(p) for p in cards))
+    cards = [next(p for p in pubs if id(p) == i) for i in cards]
+
+    def hl_attrs(p):
+        hl = ' '.join(t for t in TOPICS if p in highlights[t])
+        default = ' data-default' if p in featured else ' hidden'
+        return f' data-hl="{hl}"{default}'
+
+    feat_html = '\n'.join(
+        feat_card(p, short_title(p['title']) in big, i < 2, hl_attrs(p)) for i, p in enumerate(cards))
 
     counts = {k: sum(k in p['topics'] for p in pubs) for k in TOPICS}
     chips = [f'<button class="glass" data-topic="all" aria-pressed="true">All<span class="count">{len(pubs)}</span></button>']

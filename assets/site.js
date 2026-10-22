@@ -25,9 +25,14 @@ if (filters) {
     if (!btn) return;
     const topic = btn.dataset.topic;
     filters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
-    document.querySelectorAll('[data-topics]').forEach(el => {
+    document.querySelectorAll('.paper[data-topics]').forEach(el => {
       el.hidden = topic !== 'all' && !el.dataset.topics.split(' ').includes(topic);
     });
+    // Highlights: the default picks for "All", otherwise that topic's own top three.
+    document.querySelectorAll('.feat[data-hl]').forEach(el => {
+      el.hidden = topic === 'all' ? !('default' in el.dataset) : !el.dataset.hl.split(' ').includes(topic);
+    });
+    document.querySelector('.featured')?.classList.toggle('filtered', topic !== 'all');
     document.querySelectorAll('.year-group').forEach(g => {
       g.hidden = !g.querySelector('.paper:not([hidden])');
     });

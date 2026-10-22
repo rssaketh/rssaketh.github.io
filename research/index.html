@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Manrope:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="/assets/site.css?v=901d51cf">
+  <link rel="stylesheet" href="/assets/site.css?v=af301657">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSFRPR5L7E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -50,7 +50,7 @@
     <section class="section">
       <div class="section-head"><h2>Highlights</h2></div>
       <div class="featured">
-        <a class="feat card reveal big" href="https://ai.meta.com/research/movie-gen/" data-topics="generation">
+        <a class="feat card reveal big" href="https://ai.meta.com/research/movie-gen/" data-hl="generation" data-default>
           <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="/assets/media/moviegen.jpg" aria-label="Movie Gen sample"><source src="/assets/media/moviegen.mp4" type="video/mp4"></video><span class="play">Video</span></div>
           <div class="body">
             <div class="meta"><span>Tech report 2024</span><span class="tag hot">Core contributor</span></div>
@@ -58,7 +58,7 @@
             <p class="note">Foundation models that generate HD video with synchronized audio, plus instruction-based video editing and personalized video generation.</p>
           </div>
         </a>
-        <a class="feat card reveal big" href="https://emu-video.metademolab.com" data-topics="generation">
+        <a class="feat card reveal big" href="https://emu-video.metademolab.com" data-hl="generation" data-default>
           <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="/assets/media/emuvideo.jpg" aria-label="Emu Video sample"><source src="/assets/media/emuvideo.mp4" type="video/mp4"></video><span class="play">Video</span></div>
           <div class="body">
             <div class="meta"><span>ECCV 2024</span></div>
@@ -66,7 +66,7 @@
             <p class="note">State-of-the-art diffusion-based text-to-video generation by first generating an image, then a video conditioned on it.</p>
           </div>
         </a>
-        <a class="feat card reveal" href="https://arxiv.org/abs/2511.22249" data-topics="generation">
+        <a class="feat card reveal" href="https://arxiv.org/abs/2511.22249" data-hl="generation" data-default>
           <div class="media contain"><img src="/assets/media/freq.webp" alt="Figure from Toward Diffusible High-Dimensional Latent Spaces" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="meta"><span>CVPR 2026</span></div>
@@ -74,7 +74,7 @@
             <p class="note">Why higher-dimensional autoencoder latents improve reconstruction but eventually hurt generation, studied through a frequency lens.</p>
           </div>
         </a>
-        <a class="feat card reveal" href="https://arxiv.org/abs/2501.18593" data-topics="generation">
+        <a class="feat card reveal" href="https://arxiv.org/abs/2501.18593" data-hl="" data-default>
           <div class="media"><img src="/assets/media/dito.webp" alt="Figure from Diffusion Autoencoders are Scalable Image Tokenizers" loading="lazy" decoding="async" style="object-position:center top"></div>
           <div class="body">
             <div class="meta"><span>arXiv 2025</span></div>
@@ -82,7 +82,7 @@
             <p class="note">DiTo: a simple diffusion tokenizer that learns compact visual representations for image generation with a single learning objective.</p>
           </div>
         </a>
-        <a class="feat card reveal" href="https://arxiv.org/abs/2412.16153" data-topics="generation">
+        <a class="feat card reveal" href="https://arxiv.org/abs/2412.16153" data-hl="" data-default>
           <div class="media contain"><img src="/assets/media/motif.webp" alt="Figure from MotiF" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="meta"><span>CVPR 2025</span></div>
@@ -90,7 +90,7 @@
             <p class="note">A motion focal loss that makes text-guided image animation follow the motion described in the prompt.</p>
           </div>
         </a>
-        <a class="feat card reveal big" href="https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/" data-topics="generation">
+        <a class="feat card reveal big" href="https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/" data-hl="" data-default>
           <div class="media"><img src="/assets/media/instdiff.webp" alt="Figure from InstanceDiffusion" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="meta"><span>CVPR 2024</span></div>
@@ -98,12 +98,84 @@
             <p class="note">Precise instance-level control — points, boxes, scribbles, masks — for text-to-image generation.</p>
           </div>
         </a>
-        <a class="feat card reveal big" href="/most.html" data-topics="discovery">
+        <a class="feat card reveal big" href="/most.html" data-hl="discovery" data-default>
           <div class="media"><img src="/assets/media/most.webp" alt="Figure from MOST" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="meta"><span>ICCV 2023</span><span class="tag hot">Oral</span></div>
             <h3>MOST: Multiple Object Localization with Self-supervised Transformers for Object Discovery</h3>
             <p class="note">Localizes multiple objects in real-world images without any training, using self-supervised transformers.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://arxiv.org/abs/2508.03695" data-hl="video" hidden>
+          <div class="media"><img src="/assets/media/trokens.webp" alt="Figure from Trokens" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>ICCV 2025</span></div>
+            <h3>Trokens: Semantic-Aware Relational Trajectory Tokens for Few-Shot Action Recognition</h3>
+            <p class="note">Semantic-aware point selection and relational trajectory tokens that model motion and appearance for few-shot action recognition.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://www.cs.umd.edu/~pulkit/tats/" data-hl="video" hidden>
+          <div class="media contain"><img src="/assets/media/tats.webp" alt="Figure from Trajectory-aligned Space-time Tokens for Few-shot Action Recognition" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>ECCV 2024</span></div>
+            <h3>Trajectory-aligned Space-time Tokens for Few-shot Action Recognition</h3>
+            <p class="note">Point trajectories and self-supervised representations for few-shot action recognition.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Huang_UVIS_Unsupervised_Video_Instance_Segmentation_CVPRW_2024_paper.pdf" data-hl="video discovery" hidden>
+          <div class="media contain"><img src="/assets/media/uvis.webp" alt="Figure from UVIS" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>CVPR Workshops 2024</span></div>
+            <h3>UVIS: Unsupervised Video Instance Segmentation</h3>
+            <p class="note">Video instance segmentation without any video annotations or densely labeled pre-training.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://www.cs.umd.edu/~sakshams/SparseDet/index.html" data-hl="discovery" hidden>
+          <div class="media contain"><img src="/assets/media/sparsedet.webp" alt="Figure from SparseDet" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>ICCV 2023</span></div>
+            <h3>SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining</h3>
+            <p class="note">Treats missing annotations as region-based semi-supervised learning to improve detectors.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://openaccess.thecvf.com/content/CVPR2021W/AICity/papers/Khorramshahi_Towards_Accurate_Visual_and_Natural_Language-Based_Vehicle_Retrieval_Systems_CVPRW_2021_paper.pdf" data-hl="reid" hidden>
+          <div class="media contain"><img src="/assets/media/nlret.webp" alt="Figure from Towards Accurate Visual and Natural Language-based Vehicle Retrieval Systems" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>CVPR Workshops 2021</span></div>
+            <h3>Towards Accurate Visual and Natural Language-based Vehicle Retrieval Systems</h3>
+            <p class="note">A real-time system for image-based vehicle re-identification and natural-language vehicle retrieval (AI City Challenge).</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w35/Peri_Towards_Real-Time_Systems_for_Vehicle_Re-Identification_Multi-Camera_Tracking_and_Anomaly_CVPRW_2020_paper.pdf" data-hl="reid" hidden>
+          <div class="media contain"><img src="/assets/media/mcmt.webp" alt="Figure from Towards Real-Time Systems for Vehicle Re-Identification, Multi-Camera Tracking, and Anomaly Detection" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>CVPR Workshops 2020</span></div>
+            <h3>Towards Real-Time Systems for Vehicle Re-Identification, Multi-Camera Tracking, and Anomaly Detection</h3>
+            <p class="note">Real-time vehicle re-ID, multi-camera tracking and anomaly detection across a network of traffic cameras (AI City Challenge).</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://arxiv.org/abs/1905.03397" data-hl="reid" hidden>
+          <div class="media contain"><img src="/assets/media/aaver.webp" alt="Figure from A Dual-Path Model With Adaptive Attention for Vehicle Re-Identification" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>ICCV 2019</span><span class="tag hot">Oral</span></div>
+            <h3>A Dual-Path Model With Adaptive Attention for Vehicle Re-Identification</h3>
+            <p class="note">A dual-path adaptive attention model for vehicle re-identification.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="/data/boosting.pdf" data-hl="learning" hidden>
+          <div class="media contain"><img src="/assets/media/boost.webp" alt="Figure from An Empirical Analysis of Boosting Deep Networks" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>IJCNN 2022</span></div>
+            <h3>An Empirical Analysis of Boosting Deep Networks</h3>
+            <p class="note">A single large network is usually more accurate than a boosted ensemble with the same total parameters.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://arxiv.org/abs/2110.13386" data-hl="learning" hidden>
+          <div class="media contain"><img src="/assets/media/fewshot.webp" alt="Figure from Self-Denoising Neural Networks for Few-shot Learning" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>arXiv 2021</span></div>
+            <h3>Self-Denoising Neural Networks for Few-shot Learning</h3>
+            <p class="note">An architecture based on denoising auto-encoders that improves few-shot learning.</p>
           </div>
         </a>
       </div>
@@ -388,6 +460,6 @@
     </footer>
   </main>
   <script type="module" src="/assets/scene.js?v=21dc56a7"></script>
-  <script type="module" src="/assets/site.js?v=96b2ba5d"></script>
+  <script type="module" src="/assets/site.js?v=2568fa48"></script>
 </body>
 </html>
