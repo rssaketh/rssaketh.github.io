@@ -398,7 +398,10 @@
   "topics": [
    "video"
   ],
-  "media": null,
+  "media": {
+   "img": "objstates.webp",
+   "fit": "contain"
+  },
   "links": [
    [
     "OpenReview",

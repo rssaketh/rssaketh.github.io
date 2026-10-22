@@ -202,10 +202,20 @@ def build():
     featured = [by_title[k] for k in order if k in by_title]
     big = {'Movie Gen', 'Emu Video', 'InstanceDiffusion', 'MOST'}
 
-    # Each topic filter gets its own three highlights: featured papers first,
-    # then the newest papers in that topic.
+    # Each topic filter gets its own three highlights: hand-picked where listed,
+    # otherwise featured papers first, then the newest papers in that topic.
+    picks = {
+        'generation': ['Movie Gen', 'Emu Video', 'InstanceDiffusion'],
+        'discovery': ['MOST', 'The Pursuit of Knowledge', 'SparseDet'],
+        'reid': ['Towards Accurate Visual and Natural Language-based Vehicle Retrieval Systems',
+                 'A Dual-Path Model With Adaptive Attention for Vehicle Re-Identification',
+                 'Body Part Alignment and Temporal Attention Pooling for Video-Based Person Re-Identification'],
+    }
     highlights = {}
     for t in TOPICS:
+        if t in picks:
+            highlights[t] = [by_title[k] for k in picks[t]]
+            continue
         ranked = [p for p in featured if t in p['topics']] + [p for p in pubs if t in p['topics'] and p not in featured]
         highlights[t] = ranked[:3]
     cards = featured + [p for t in TOPICS for p in highlights[t] if p not in featured]
