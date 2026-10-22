@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About · Saketh Rambhatla</title>
-  <meta name="description" content="About Saketh Rambhatla: Skild AI, previously Meta GenAI; Ph.D. University of Maryland; IIT Kharagpur.">
+  <meta name="description" content="About Saketh Rambhatla: Member of Technical Staff at Skild AI; previously Senior Research Scientist and postdoc at Meta; Ph.D. University of Maryland; IIT Kharagpur.">
   <meta name="author" content="Saketh Rambhatla">
-  <meta name="theme-color" content="#4d86d2">
+  <meta name="theme-color" content="#6aa5d8">
+  <link rel="canonical" href="https://rssaketh.github.io/about/">
   <meta property="og:title" content="About · Saketh Rambhatla">
-  <meta property="og:description" content="Research on generative models for video and images. Now at Skild AI.">
+  <meta property="og:description" content="About Saketh Rambhatla: Member of Technical Staff at Skild AI; previously Senior Research Scientist and postdoc at Meta; Ph.D. University of Maryland; IIT Kharagpur.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rssaketh.github.io/about/">
+  <meta property="og:image" content="https://rssaketh.github.io/assets/media/moviegen.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/site.css?v=0e432856">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSFRPR5L7E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,31 +27,68 @@
     gtag('config', 'G-QSFRPR5L7E');
   </script>
 </head>
-<body data-scene="lake">
+<body data-scene="dunes">
   <div class="scene"></div>
   <div class="grain"></div>
-
-  <main class="page">
-    <p class="eyebrow"><a href="/">Saketh Rambhatla</a></p>
-    <h1>About</h1>
-    <section class="panel">
-      <p>I work at Skild AI. Before that I was a Research Scientist at Meta GenAI, where I worked on image and video generation — including <a href="https://ai.meta.com/research/movie-gen/">Movie Gen</a> and <a href="https://emu-video.metademolab.com">Emu Video</a> — and earlier a postdoctoral researcher with <a href="https://imisra.github.io">Ishan Misra</a>.</p>
-      <p>I did my Ph.D. in ECE at the <a href="https://umd.edu">University of Maryland, College Park</a>, working on in-the-wild visual understanding with <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a> and <a href="https://abhinavsh.info">Abhinav Shrivastava</a>: object tracking, person re-identification, object detection and discovery, and multi-modal inconsistency detection. Before that, my bachelor's and master's at <a href="https://www.iitkgp.ac.in">IIT Kharagpur</a>.</p>
-
-      <h2>Service</h2>
-      <ul class="plain">
-        <li><b>Conference reviewer</b> — CVPR 2021–2024, ICCV 2021, 2023, ECCV 2020, 2022, 2024, NeurIPS 2023, ICLR 2023–2024, ICML 2024, AAAI 2021–2022</li>
-        <li><b>Journal reviewer</b> — IJCV, Pattern Recognition Letters, IEEE Access</li>
-      </ul>
-
-      <h2>Teaching</h2>
-      <ul class="plain">
-        <li><b>Graduate TA, UMD</b> — ENEE222 (Fall 2016), ENEE324 (Spring 2017), ENEE425 (Fall 2017), ENEE630 (Fall 2017)</li>
-      </ul>
+  <header class="topbar">
+    <a class="mark glass" href="/" aria-label="Home">SR</a>
+    <div class="topbar-right">
+      <span class="clock glass" data-clock></span>
+      <nav aria-label="Main"><ul class="menu glass"><li><a href="/">Home</a></li><li><a href="/research/">Research</a></li><li><a href="/about/" aria-current="page">About</a></li><li><a href="/links/">Links</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-head">
+      <p class="kicker"><span class="dot"></span>San Mateo, California</p>
+      <h1>About</h1>
     </section>
-  </main>
 
-  <p class="clock" data-clock></p>
-  <script type="module" src="/assets/scene.js"></script>
+    <div class="about-grid">
+      <section class="card pad reveal">
+        <p class="sub">Hello</p>
+        <p>I’m a Member of Technical Staff at <b>Skild AI</b>, where I research and develop Vision-Language-Action (VLA) and World Action Models (WAM) for multi-embodiment robot control, toward generalist robot policies.</p>
+        <p>Before Skild, I was a Senior Research Scientist at Meta AI Research in Seattle, working on native image and video generation with large language models. Before that I was a postdoctoral researcher at Meta in New York with <a href="https://imisra.github.io">Ishan Misra</a>, working on generation — <a href="https://ai.meta.com/research/movie-gen/">Movie Gen</a>, <a href="https://emu-video.metademolab.com">Emu Video</a>, <a href="https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/">InstanceDiffusion</a> — and evaluation (<a href="https://arxiv.org/abs/2311.10708">SelfEval</a>).</p>
+        <p>I did my Ph.D. in Electrical Engineering at the <a href="https://umd.edu">University of Maryland, College Park</a> with <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Rama Chellappa</a> and <a href="https://abhinavsh.info">Abhinav Shrivastava</a>, on in-the-wild visual understanding: object discovery and localization, sparsely annotated detection, few-shot learning, tracking and re-identification. Before that, a dual degree in Electrical Engineering at <a href="https://www.iitkgp.ac.in">IIT Kharagpur</a>.</p>
+
+        <p class="sub">Service</p>
+        <ul class="plain">
+          <li><b>Conferences</b> — CVPR ’19–’26, ECCV ’20–’26, ICCV ’19–’25, ICLR ’23–’25, NeurIPS ’23–’25, ICML ’24</li>
+          <li><b>Journals</b> — IJCV, T-PAMI, Pattern Recognition Letters, IEEE Access</li>
+        </ul>
+
+        <p class="sub">Teaching</p>
+        <ul class="plain">
+          <li><b>Graduate TA, UMD</b> — ENEE222 (Fall 2016), ENEE324 (Spring 2017), ENEE425 (Fall 2017), ENEE630 (Fall 2017)</li>
+        </ul>
+      </section>
+
+      <div class="stack">
+        <section class="card pad reveal">
+          <p class="sub">Experience</p>
+          <ol class="timeline">
+            <li><div class="when">Dec 2025 – now</div><div class="what">Member of Technical Staff</div><div class="where">Skild AI Research, San Mateo</div></li>
+            <li><div class="when">Oct 2024 – Dec 2025</div><div class="what">Senior Research Scientist</div><div class="where">Meta AI Research, Seattle</div></li>
+            <li><div class="when">Jan 2023 – Oct 2024</div><div class="what">Postdoctoral Researcher</div><div class="where">Meta AI Research, New York · with Ishan Misra</div></li>
+            <li><div class="when">2022</div><div class="what">Research Intern</div><div class="where">Cruise AI, San Francisco</div></li>
+            <li><div class="when">2018, 2019</div><div class="what">Research Intern</div><div class="where">Mitsubishi Electric Research Laboratories, Boston</div></li>
+          </ol>
+        </section>
+        <section class="card pad reveal">
+          <p class="sub">Education</p>
+          <ol class="timeline">
+            <li><div class="when">2016 – 2022</div><div class="what">Ph.D., Electrical Engineering</div><div class="where">University of Maryland, College Park · Thesis: Towards In-the-Wild Visual Understanding</div></li>
+            <li><div class="when">2016 – 2021</div><div class="what">M.S., Electrical Engineering</div><div class="where">University of Maryland, College Park</div></li>
+            <li><div class="when">2011 – 2016</div><div class="what">Dual Degree (B.Tech + M.Tech), Electrical Engineering</div><div class="where">IIT Kharagpur</div></li>
+          </ol>
+        </section>
+      </div>
+    </div>
+    <footer class="foot">
+      <span>© 2026 Saketh Rambhatla · The sky follows the time in San Mateo.</span>
+      <span><a href="/classic.html">Old site</a></span>
+    </footer>
+  </main>
+  <script type="module" src="/assets/scene.js?v=21dc56a7"></script>
+  <script type="module" src="/assets/site.js?v=96b2ba5d"></script>
 </body>
 </html>

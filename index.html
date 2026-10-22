@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saketh Rambhatla</title>
-  <meta name="description" content="Saketh Rambhatla — researcher working on generative models for video and images, now at Skild AI. Previously Meta GenAI (Movie Gen, Emu Video); Ph.D. University of Maryland.">
+  <meta name="description" content="Saketh Rambhatla — Member of Technical Staff at Skild AI working on VLA and world action models for robots. Previously Senior Research Scientist at Meta (Movie Gen, Emu Video); Ph.D. University of Maryland.">
   <meta name="author" content="Saketh Rambhatla">
-  <meta name="theme-color" content="#4d86d2">
+  <meta name="theme-color" content="#6aa5d8">
+  <link rel="canonical" href="https://rssaketh.github.io/">
   <meta property="og:title" content="Saketh Rambhatla">
-  <meta property="og:description" content="Research on generative models for video and images. Now at Skild AI.">
+  <meta property="og:description" content="Saketh Rambhatla — Member of Technical Staff at Skild AI working on VLA and world action models for robots. Previously Senior Research Scientist at Meta (Movie Gen, Emu Video); Ph.D. University of Maryland.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rssaketh.github.io/">
+  <meta property="og:image" content="https://rssaketh.github.io/assets/media/moviegen.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/site.css?v=0e432856">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSFRPR5L7E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,21 +27,79 @@
     gtag('config', 'G-QSFRPR5L7E');
   </script>
 </head>
-<body class="home" data-scene="hills">
+<body data-scene="mesas" class="home">
   <div class="scene"></div>
   <div class="grain"></div>
+  <header class="topbar">
+    <a class="mark glass" href="/" aria-label="Home">SR</a>
+    <div class="topbar-right">
+      <span class="clock glass" data-clock></span>
+      <nav aria-label="Main"><ul class="menu glass"><li><a href="/" aria-current="page">Home</a></li><li><a href="/research/">Research</a></li><li><a href="/about/">About</a></li><li><a href="/links/">Links</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker"><span class="dot"></span>Member of Technical Staff · Skild AI</p>
+      <h1>Saketh<br><em>Rambhatla</em></h1>
+      <p class="lede">I work on Vision-Language-Action and World Action Models for multi-embodiment robot control at Skild AI. Previously a Senior Research Scientist at Meta, building image and video generation models like Movie Gen and Emu Video.</p>
+      <div class="btns">
+        <a class="btn primary" href="/research/">See research →</a>
+        <a class="btn glass" href="/about/">About me</a>
+        <a class="btn glass" href="/data/rssaketh.pdf">CV</a>
+      </div>
+    </section>
 
-  <main class="page">
-    <h1>Saketh Rambhatla</h1>
-    <p class="lede">I build generative models for video and images — Movie Gen and Emu Video at Meta — and now work at Skild AI.</p>
-    <ul class="nav">
-      <li><a href="/research/">Research</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/links/">Links</a></li>
-    </ul>
+    <section class="section">
+      <div class="section-head reveal"><h2>Selected work</h2><a class="btn glass" href="/research/">All 23 papers →</a></div>
+      <div class="featured">
+        <a class="feat card reveal big" href="https://ai.meta.com/research/movie-gen/" data-topics="generation video">
+          <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="/assets/media/moviegen.jpg" aria-label="Movie Gen sample"><source src="/assets/media/moviegen.mp4" type="video/mp4"></video><span class="play">Video</span></div>
+          <div class="body">
+            <div class="meta"><span>Tech report 2024</span><span class="tag hot">Core contributor</span></div>
+            <h3>Movie Gen: A Cast of Media Foundation Models</h3>
+            <p class="note">Foundation models that generate HD video with synchronized audio, plus instruction-based video editing and personalized video generation.</p>
+          </div>
+        </a>
+        <a class="feat card reveal big" href="https://emu-video.metademolab.com" data-topics="generation video">
+          <div class="media"><video data-autoplay muted loop playsinline preload="none" poster="/assets/media/emuvideo.jpg" aria-label="Emu Video sample"><source src="/assets/media/emuvideo.mp4" type="video/mp4"></video><span class="play">Video</span></div>
+          <div class="body">
+            <div class="meta"><span>ECCV 2024</span></div>
+            <h3>Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning</h3>
+            <p class="note">State-of-the-art diffusion-based text-to-video generation by first generating an image, then a video conditioned on it.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://arxiv.org/abs/2511.22249" data-topics="generation">
+          <div class="media contain"><img src="/assets/media/freq.webp" alt="Figure from Toward Diffusible High-Dimensional Latent Spaces" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>CVPR 2026</span></div>
+            <h3>Toward Diffusible High-Dimensional Latent Spaces: A Frequency Perspective</h3>
+            <p class="note">Why higher-dimensional autoencoder latents improve reconstruction but eventually hurt generation, studied through a frequency lens.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://arxiv.org/abs/2501.18593" data-topics="generation">
+          <div class="media"><img src="/assets/media/dito.webp" alt="Figure from Diffusion Autoencoders are Scalable Image Tokenizers" loading="lazy" decoding="async" style="object-position:center top"></div>
+          <div class="body">
+            <div class="meta"><span>arXiv 2025</span></div>
+            <h3>Diffusion Autoencoders are Scalable Image Tokenizers</h3>
+            <p class="note">DiTo: a simple diffusion tokenizer that learns compact visual representations for image generation with a single learning objective.</p>
+          </div>
+        </a>
+        <a class="feat card reveal" href="https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/" data-topics="generation">
+          <div class="media"><img src="/assets/media/instdiff.webp" alt="Figure from InstanceDiffusion" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <div class="meta"><span>CVPR 2024</span></div>
+            <h3>InstanceDiffusion: Instance-level Control for Image Generation</h3>
+            <p class="note">Precise instance-level control — points, boxes, scribbles, masks — for text-to-image generation.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="foot">
+      <span>© 2026 Saketh Rambhatla · The sky follows the time in San Mateo.</span>
+      <span><a href="/classic.html">Old site</a></span>
+    </footer>
   </main>
-
-  <p class="clock" data-clock></p>
-  <script type="module" src="/assets/scene.js"></script>
+  <script type="module" src="/assets/scene.js?v=21dc56a7"></script>
+  <script type="module" src="/assets/site.js?v=96b2ba5d"></script>
 </body>
 </html>

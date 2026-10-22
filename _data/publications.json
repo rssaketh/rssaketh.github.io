@@ -1,0 +1,697 @@
+[
+ {
+  "year": 2026,
+  "title": "Toward Diffusible High-Dimensional Latent Spaces: A Frequency Perspective",
+  "authors": [
+   "Bolin Lai",
+   "Xudong Wang",
+   "ME",
+   "James M. Rehg",
+   "Zsolt Kira",
+   "Rohit Girdhar",
+   "Ishan Misra"
+  ],
+  "venue": "CVPR 2026",
+  "topics": [
+   "generation"
+  ],
+  "featured": true,
+  "media": {
+   "img": "freq.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2511.22249"
+   ],
+   [
+    "Paper",
+    "https://openaccess.thecvf.com/content/CVPR2026/html/Lai_Toward_Diffusible_High-Dimensional_Latent_Spaces_A_Frequency_Perspective_CVPR_2026_paper.html"
+   ]
+  ],
+  "note": "Why higher-dimensional autoencoder latents improve reconstruction but eventually hurt generation, studied through a frequency lens."
+ },
+ {
+  "year": 2025,
+  "title": "Trokens: Semantic-Aware Relational Trajectory Tokens for Few-Shot Action Recognition",
+  "authors": [
+   "Pulkit Kumar",
+   "Shuaiyi Huang",
+   "Matthew Walmer",
+   "ME",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ICCV 2025",
+  "topics": [
+   "video"
+  ],
+  "media": {
+   "img": "trokens.webp",
+   "fit": "cover"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2508.03695"
+   ],
+   [
+    "Paper",
+    "https://ieeexplore.ieee.org/abstract/document/11443635/"
+   ]
+  ],
+  "note": "Semantic-aware point selection and relational trajectory tokens that model motion and appearance for few-shot action recognition."
+ },
+ {
+  "year": 2025,
+  "title": "MotiF: Making Text Count in Image Animation with Motion Focal Loss",
+  "authors": [
+   "Shijie Wang",
+   "Samaneh Azadi",
+   "Rohit Girdhar",
+   "ME",
+   "Chen Sun",
+   "Xi Yin"
+  ],
+  "venue": "CVPR 2025",
+  "topics": [
+   "generation",
+   "video"
+  ],
+  "featured": true,
+  "media": {
+   "img": "motif.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2412.16153"
+   ],
+   [
+    "Paper",
+    "https://ieeexplore.ieee.org/abstract/document/11092628/"
+   ]
+  ],
+  "note": "A motion focal loss that makes text-guided image animation follow the motion described in the prompt."
+ },
+ {
+  "year": 2025,
+  "title": "Diffusion Autoencoders are Scalable Image Tokenizers",
+  "authors": [
+   "Yinbo Chen",
+   "Rohit Girdhar",
+   "Xiaolong Wang",
+   "ME",
+   "Ishan Misra"
+  ],
+  "venue": "arXiv 2025",
+  "topics": [
+   "generation"
+  ],
+  "featured": true,
+  "media": {
+   "img": "dito.webp",
+   "fit": "cover",
+   "pos": "center top"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2501.18593"
+   ]
+  ],
+  "note": "DiTo: a simple diffusion tokenizer that learns compact visual representations for image generation with a single learning objective."
+ },
+ {
+  "year": 2024,
+  "title": "Movie Gen: A Cast of Media Foundation Models",
+  "authors": [
+   "Meta Movie Gen team"
+  ],
+  "venue": "Tech report 2024",
+  "topics": [
+   "generation",
+   "video"
+  ],
+  "featured": true,
+  "media": {
+   "video": "moviegen.mp4",
+   "poster": "moviegen.jpg",
+   "fit": "cover"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://ai.meta.com/research/movie-gen/"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2410.13720"
+   ]
+  ],
+  "note": "Foundation models that generate HD video with synchronized audio, plus instruction-based video editing and personalized video generation.",
+  "badge": "Core contributor"
+ },
+ {
+  "year": 2024,
+  "title": "Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning",
+  "authors": [
+   "Rohit Girdhar*†",
+   "Mannat Singh*†",
+   "Andrew Brown*",
+   "Quentin Duval*",
+   "Samaneh Azadi*",
+   "ME",
+   "Mian Akbar Shah",
+   "Xi Yin",
+   "Devi Parikh",
+   "Ishan Misra*"
+  ],
+  "venue": "ECCV 2024",
+  "topics": [
+   "generation",
+   "video"
+  ],
+  "featured": true,
+  "media": {
+   "video": "emuvideo.mp4",
+   "poster": "emuvideo.jpg",
+   "fit": "cover"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://emu-video.metademolab.com"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2311.10709"
+   ]
+  ],
+  "note": "State-of-the-art diffusion-based text-to-video generation by first generating an image, then a video conditioned on it."
+ },
+ {
+  "year": 2024,
+  "title": "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition",
+  "authors": [
+   "Pulkit Kumar",
+   "Namitha Padmanabhan",
+   "Luke Luo",
+   "ME",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ECCV 2024",
+  "topics": [
+   "video"
+  ],
+  "media": {
+   "img": "tats.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://www.cs.umd.edu/~pulkit/tats/"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2407.18249"
+   ],
+   [
+    "Code",
+    "https://github.com/pulkitkumar95/tats"
+   ]
+  ],
+  "note": "Point trajectories and self-supervised representations for few-shot action recognition."
+ },
+ {
+  "year": 2024,
+  "title": "InstanceDiffusion: Instance-level Control for Image Generation",
+  "authors": [
+   "Xudong Wang",
+   "Trevor Darrell",
+   "ME",
+   "Rohit Girdhar",
+   "Ishan Misra"
+  ],
+  "venue": "CVPR 2024",
+  "topics": [
+   "generation"
+  ],
+  "featured": true,
+  "media": {
+   "img": "instdiff.webp",
+   "fit": "cover"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2402.03290"
+   ],
+   [
+    "Code",
+    "https://github.com/frank-xwang/InstanceDiffusion"
+   ]
+  ],
+  "note": "Precise instance-level control — points, boxes, scribbles, masks — for text-to-image generation."
+ },
+ {
+  "year": 2024,
+  "title": "UVIS: Unsupervised Video Instance Segmentation",
+  "authors": [
+   "Shuaiyi Huang",
+   "Saksham Suri",
+   "Kamal Gupta",
+   "ME",
+   "Ser-nam Lim",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "CVPR Workshops 2024",
+  "topics": [
+   "video",
+   "discovery"
+  ],
+  "media": {
+   "img": "uvis.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Paper",
+    "https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Huang_UVIS_Unsupervised_Video_Instance_Segmentation_CVPRW_2024_paper.pdf"
+   ]
+  ],
+  "note": "Video instance segmentation without any video annotations or densely labeled pre-training."
+ },
+ {
+  "year": 2024,
+  "title": "SelfEval: Leveraging the Discriminative Nature of Generative Models for Evaluation",
+  "authors": [
+   "ME",
+   "Ishan Misra"
+  ],
+  "venue": "TMLR 2024",
+  "topics": [
+   "generation"
+  ],
+  "media": {
+   "img": "selfeval.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2311.10708"
+   ]
+  ],
+  "note": "Repurposes generative models as discriminative models to evaluate generative performance."
+ },
+ {
+  "year": 2023,
+  "title": "MOST: Multiple Object Localization with Self-supervised Transformers for Object Discovery",
+  "authors": [
+   "ME",
+   "Ishan Misra",
+   "Rama Chellappa",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ICCV 2023",
+  "badge": "Oral",
+  "topics": [
+   "discovery"
+  ],
+  "featured": true,
+  "media": {
+   "img": "most.webp",
+   "fit": "cover"
+  },
+  "links": [
+   [
+    "Project page",
+    "/most.html"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2304.05387"
+   ],
+   [
+    "Code",
+    "https://github.com/rssaketh/MOST"
+   ],
+   [
+    "Poster",
+    "/data/most_poster.pdf"
+   ]
+  ],
+  "note": "Localizes multiple objects in real-world images without any training, using self-supervised transformers."
+ },
+ {
+  "year": 2023,
+  "title": "SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining",
+  "authors": [
+   "Saksham Suri*",
+   "ME*",
+   "Rama Chellappa",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ICCV 2023",
+  "topics": [
+   "discovery"
+  ],
+  "media": {
+   "img": "sparsedet.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://www.cs.umd.edu/~sakshams/SparseDet/index.html"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2201.04620"
+   ],
+   [
+    "Code",
+    "https://github.com/saksham-s/SparseDet"
+   ],
+   [
+    "Poster",
+    "/data/sparsedet_poster.pdf"
+   ]
+  ],
+  "note": "Treats missing annotations as region-based semi-supervised learning to improve detectors."
+ },
+ {
+  "year": 2022,
+  "title": "Recognizing Actions using Object States",
+  "authors": [
+   "Nirat Saini",
+   "Bo He",
+   "Gaurav Shrivastava",
+   "ME",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ICLR 2022 Workshop",
+  "topics": [
+   "video"
+  ],
+  "media": null,
+  "links": [
+   [
+    "OpenReview",
+    "https://openreview.net/forum?id=HBgzIHOUqgq"
+   ],
+   [
+    "PDF",
+    "https://openreview.net/pdf?id=HBgzIHOUqgq"
+   ]
+  ],
+  "note": "Recognizes object-centric actions from just two object states, start and end."
+ },
+ {
+  "year": 2022,
+  "title": "An Empirical Analysis of Boosting Deep Networks",
+  "authors": [
+   "ME",
+   "Michael Jones",
+   "Rama Chellappa"
+  ],
+  "venue": "IJCNN 2022",
+  "topics": [
+   "learning"
+  ],
+  "media": {
+   "img": "boost.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Paper",
+    "/data/boosting.pdf"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2107.13600"
+   ]
+  ],
+  "note": "A single large network is usually more accurate than a boosted ensemble with the same total parameters."
+ },
+ {
+  "year": 2021,
+  "title": "The Pursuit of Knowledge: Discovering and Localizing Novel Categories using Dual Memory",
+  "authors": [
+   "ME",
+   "Rama Chellappa",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ICCV 2021",
+  "topics": [
+   "discovery"
+  ],
+  "media": {
+   "img": "poha.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Project page",
+    "/project_pages/obj_disc_new.html"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2105.01652"
+   ],
+   [
+    "Code",
+    "https://github.com/learn2phoenix/cvpr22_vplow_ow"
+   ],
+   [
+    "Poster",
+    "/data/ICCV2021_PoHa_poster.pdf"
+   ]
+  ],
+  "note": "Automatically discovers and learns models for new categories from a large unlabeled dataset."
+ },
+ {
+  "year": 2021,
+  "title": "Towards Discovery and Attribution of Open-world GAN Generated Images",
+  "authors": [
+   "Sharath Girish*",
+   "Saksham Suri*",
+   "ME",
+   "Abhinav Shrivastava"
+  ],
+  "venue": "ICCV 2021",
+  "topics": [
+   "generation",
+   "discovery"
+  ],
+  "media": {
+   "img": "gan.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://www.cs.umd.edu/~sakshams/project_page/gan_wild.html"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2105.04580"
+   ]
+  ],
+  "note": "Discovers and attributes images from unseen GANs in the open world."
+ },
+ {
+  "year": 2021,
+  "title": "Self-Denoising Neural Networks for Few-shot Learning",
+  "authors": [
+   "Steven Schwarcz",
+   "ME",
+   "Rama Chellappa"
+  ],
+  "venue": "arXiv 2021",
+  "topics": [
+   "learning"
+  ],
+  "media": {
+   "img": "fewshot.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2110.13386"
+   ]
+  ],
+  "note": "An architecture based on denoising auto-encoders that improves few-shot learning."
+ },
+ {
+  "year": 2021,
+  "title": "Towards Accurate Visual and Natural Language-based Vehicle Retrieval Systems",
+  "authors": [
+   "Pirazh Khorramshahi*",
+   "ME*",
+   "Rama Chellappa"
+  ],
+  "venue": "CVPR Workshops 2021",
+  "topics": [
+   "reid"
+  ],
+  "media": {
+   "img": "nlret.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Paper",
+    "https://openaccess.thecvf.com/content/CVPR2021W/AICity/papers/Khorramshahi_Towards_Accurate_Visual_and_Natural_Language-Based_Vehicle_Retrieval_Systems_CVPRW_2021_paper.pdf"
+   ]
+  ],
+  "note": "A real-time system for image-based vehicle re-identification and natural-language vehicle retrieval (AI City Challenge)."
+ },
+ {
+  "year": 2020,
+  "title": "Towards Real-Time Systems for Vehicle Re-Identification, Multi-Camera Tracking, and Anomaly Detection",
+  "authors": [
+   "Neehar Peri*",
+   "Pirazh Khorramshahi*",
+   "ME*",
+   "Vineet Shenoy",
+   "Saumya Rawat",
+   "Jun-Cheng Chen",
+   "Rama Chellappa"
+  ],
+  "venue": "CVPR Workshops 2020",
+  "topics": [
+   "reid"
+  ],
+  "media": {
+   "img": "mcmt.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Paper",
+    "https://openaccess.thecvf.com/content_CVPRW_2020/papers/w35/Peri_Towards_Real-Time_Systems_for_Vehicle_Re-Identification_Multi-Camera_Tracking_and_Anomaly_CVPRW_2020_paper.pdf"
+   ]
+  ],
+  "note": "Real-time vehicle re-ID, multi-camera tracking and anomaly detection across a network of traffic cameras (AI City Challenge)."
+ },
+ {
+  "year": 2020,
+  "title": "Detecting Human-Object Interactions via Functional Generalization",
+  "authors": [
+   "Ankan Bansal",
+   "ME",
+   "Abhinav Shrivastava",
+   "Rama Chellappa"
+  ],
+  "venue": "AAAI 2020",
+  "topics": [
+   "discovery"
+  ],
+  "media": {
+   "img": "funcgen.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://ankanbansal.com/hoi.html"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/1904.03181"
+   ]
+  ],
+  "note": "Humans interact with functionally similar objects in similar ways."
+ },
+ {
+  "year": 2020,
+  "title": "Spatial Priming for Detecting Human-Object Interactions",
+  "authors": [
+   "Ankan Bansal",
+   "ME",
+   "Abhinav Shrivastava",
+   "Rama Chellappa"
+  ],
+  "venue": "arXiv 2020",
+  "topics": [
+   "discovery"
+  ],
+  "media": {
+   "img": "spatial.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Project page",
+    "https://ankanbansal.com/hoi.html"
+   ],
+   [
+    "arXiv",
+    "https://arxiv.org/abs/2004.04851"
+   ]
+  ],
+  "note": "Exploits the spatial layout of a human and an object to detect HOIs in images."
+ },
+ {
+  "year": 2019,
+  "title": "A Dual-Path Model With Adaptive Attention for Vehicle Re-Identification",
+  "authors": [
+   "Pirazh Khorramshahi",
+   "Amit Kumar",
+   "Neehar Peri",
+   "ME",
+   "Jun-Cheng Chen",
+   "Rama Chellappa"
+  ],
+  "venue": "ICCV 2019",
+  "badge": "Oral",
+  "topics": [
+   "reid"
+  ],
+  "media": {
+   "img": "aaver.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "arXiv",
+    "https://arxiv.org/abs/1905.03397"
+   ]
+  ],
+  "note": "A dual-path adaptive attention model for vehicle re-identification."
+ },
+ {
+  "year": 2019,
+  "title": "Body Part Alignment and Temporal Attention Pooling for Video-Based Person Re-Identification",
+  "authors": [
+   "ME",
+   "Michael Jones"
+  ],
+  "venue": "BMVC 2019",
+  "topics": [
+   "reid",
+   "video"
+  ],
+  "media": {
+   "img": "personreid.webp",
+   "fit": "contain"
+  },
+  "links": [
+   [
+    "Paper",
+    "https://bmvc2019.org/wp-content/uploads/papers/0576-paper.pdf"
+   ]
+  ],
+  "note": "Feature alignment across body parts for state-of-the-art video person re-identification."
+ }
+]

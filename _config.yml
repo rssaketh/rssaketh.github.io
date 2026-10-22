@@ -1,0 +1,4 @@
+# GitHub Pages: pages are prebuilt by scripts/build.py; don't publish the tooling.
+exclude:
+  - scripts
+  - README.md
