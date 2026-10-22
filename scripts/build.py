@@ -84,9 +84,23 @@ def topbar(path):
   </header>'''
 
 
-FOOT = '''    <footer class="foot">
+# A little pixel Claude that walks back and forth beside the credit.
+CLAWD = (
+    '<span class="walk" aria-hidden="true"><span class="clawd">'
+    '<svg viewBox="0 0 16 12" shape-rendering="crispEdges">'
+    '<rect x="2" y="1" width="12" height="7" fill="#d97757"/>'
+    '<rect x="0" y="4" width="2" height="2" fill="#d97757"/>'
+    '<rect x="14" y="4" width="2" height="2" fill="#d97757"/>'
+    '<rect x="5" y="3" width="1" height="2" fill="#1a1a1a"/>'
+    '<rect x="10" y="3" width="1" height="2" fill="#1a1a1a"/>'
+    '<g class="legs-a"><rect x="3" y="8" width="1" height="3" fill="#d97757"/><rect x="10" y="8" width="1" height="3" fill="#d97757"/></g>'
+    '<g class="legs-b"><rect x="5" y="8" width="1" height="3" fill="#d97757"/><rect x="12" y="8" width="1" height="3" fill="#d97757"/></g>'
+    '</svg></span></span>'
+)
+
+FOOT = f'''    <footer class="foot">
       <span>© 2026 Saketh Rambhatla · The sky follows the time in San Mateo.</span>
-      <span><a href="/classic.html">Old site</a></span>
+      <span class="built">{CLAWD}Built with <a href="https://claude.com/claude-code">Claude</a></span>
     </footer>'''
 
 

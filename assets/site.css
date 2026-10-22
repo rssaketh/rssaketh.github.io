@@ -378,6 +378,25 @@ h3 { font-size: 16px; font-weight: 700; line-height: 1.35; margin: 0; }
 .foot { padding: 60px 0 40px; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: rgba(255, 245, 235, .82); }
 .foot a { color: #fff6ec; }
 
+.built { display: inline-flex; align-items: center; gap: 10px; }
+.walk { position: relative; width: 120px; height: 26px; }
+.clawd { position: absolute; left: 0; bottom: 0; width: 34px; animation: pace 8s linear infinite; filter: drop-shadow(0 0 1px rgba(255, 245, 235, .9)) drop-shadow(0 2px 3px rgba(0, 0, 0, .35)); }
+.clawd svg { display: block; width: 34px; height: 26px; animation: bob .5s steps(2) infinite; }
+.clawd .legs-a { animation: step .5s steps(1) infinite; }
+.clawd .legs-b { animation: step .5s steps(1) infinite reverse; }
+@keyframes pace {
+  0%     { transform: translateX(0) scaleX(1); }
+  46%    { transform: translateX(86px) scaleX(1); }
+  50%    { transform: translateX(86px) scaleX(-1); }
+  96%    { transform: translateX(0) scaleX(-1); }
+  100%   { transform: translateX(0) scaleX(1); }
+}
+@keyframes step { 0% { transform: translateY(0); } 50% { transform: translateY(-1px); } }
+@keyframes bob  { 0% { transform: translateY(0); } 100% { transform: translateY(-1px); } }
+@media (prefers-reduced-motion: reduce) {
+  .clawd, .clawd svg, .clawd .legs-a, .clawd .legs-b { animation: none; }
+}
+
 @media (max-width: 600px) {
   .clock { display: none; }
   .menu a { padding: 6px 10px; }
