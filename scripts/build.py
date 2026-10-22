@@ -316,7 +316,7 @@ def build():
         'cv': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>',
     }
     tiles = [
-        ('mail', 'Email', EMAIL, f'mailto:{EMAIL}'),
+        ('mail', 'Email', 'Opens your mail app', f'mailto:{EMAIL}'),
         ('scholar', 'Scholar', 'Papers & citations', SCHOLAR),
         ('github', 'GitHub', '@rssaketh', 'https://github.com/rssaketh'),
         ('linkedin', 'LinkedIn', 'in/rssaketh', 'https://www.linkedin.com/in/rssaketh/'),
