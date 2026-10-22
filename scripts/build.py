@@ -18,7 +18,7 @@ SCHOLAR = 'https://scholar.google.com/citations?user=VRyNTogAAAAJ&hl=en'
 EMAIL = 'saketh@skild.ai'
 
 TOPICS = {
-    'generation': 'Generative models',
+    'generation': 'Image & video generation',
     'video': 'Video understanding',
     'discovery': 'Detection & discovery',
     'reid': 'Re-ID & tracking',

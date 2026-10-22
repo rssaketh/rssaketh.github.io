@@ -75,8 +75,7 @@
   ],
   "venue": "CVPR 2025",
   "topics": [
-   "generation",
-   "video"
+   "generation"
   ],
   "featured": true,
   "media": {
@@ -131,8 +130,7 @@
   ],
   "venue": "Tech report 2024",
   "topics": [
-   "generation",
-   "video"
+   "generation"
   ],
   "featured": true,
   "media": {
@@ -170,8 +168,7 @@
   ],
   "venue": "ECCV 2024",
   "topics": [
-   "generation",
-   "video"
+   "generation"
   ],
   "featured": true,
   "media": {
@@ -489,7 +486,6 @@
   ],
   "venue": "ICCV 2021",
   "topics": [
-   "generation",
    "discovery"
   ],
   "media": {
