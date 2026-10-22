@@ -210,6 +210,7 @@ def build():
         'reid': ['Towards Accurate Visual and Natural Language-based Vehicle Retrieval Systems',
                  'A Dual-Path Model With Adaptive Attention for Vehicle Re-Identification',
                  'Body Part Alignment and Temporal Attention Pooling for Video-Based Person Re-Identification'],
+        'learning': ['An Empirical Analysis of Boosting Deep Networks'],
     }
     highlights = {}
     for t in TOPICS:
