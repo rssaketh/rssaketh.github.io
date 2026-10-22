@@ -1,0 +1,369 @@
+% AUTHOR: Sina Atalay
+% LICENSE: https://github.com/sinaatalay/rendercv/blob/main/LICENSE
+
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+        ignoreheadfoot, % set margins without considering header and footer
+        top=1.6 cm, % seperation between body and page edge from the top
+        bottom=1.8 cm, % seperation between body and page edge from the bottom
+        left=2 cm, % seperation between body and page edge from the left
+        right=2 cm, % seperation between body and page edge from the right
+        footskip=1.0 cm, % seperation between body and footer
+        % showframe % for debugging 
+    ]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\definecolor{advisorcolor}{RGB}{187, 139, 116}
+\definecolor{Black}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+% \usepackage{academicons} % \aiGoogleScholar renders incorrectly under tectonic; using \faGraduationCap
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Saketh's CV},
+    pdfauthor={Saketh Rambhatla},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage[default, type1]{sourcesanspro} % for using source sans 3 font
+\usepackage{ifthen}
+\usepackage{etoolbox} % for \patchcmd
+\newcommand{\pub}[3]{\item \begin{minipage}[t]{\linewidth}#1\\#2\\\textcolor{gray}{#3}\end{minipage}} % one unbreakable publication entry
+\newcommand{\me}{\textbf{Sai Saketh Rambhatla}} % own-name formatting in publications
+
+% Some settings:
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Saketh Rambhatla - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{
+        % make the font size of the section title large and color it with the primary color
+        \Large\color{primaryColor}
+    }{
+    }{
+    }{
+        % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
+        % from the end of the title to the end of the body
+        \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+    }[] % section title formatting
+
+\titlespacing{\section}{
+        % left space:
+        0pt
+    }{
+        % top space:
+        0.3 cm
+    }{
+        % bottom space:
+        0.2 cm
+    } % section title spacing
+
+\newcolumntype{L}[1]{
+    >{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}
+} % left-aligned fixed width column type
+\newcolumntype{R}[1]{
+    >{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}
+} % right-aligned fixed width column type
+\newcolumntype{K}[1]{
+    >{\let\newline\\\arraybackslash\hspace{0pt}}X
+} % justified flexible width column type
+\setlength\tabcolsep{-1.5pt} % no space between columns
+\newenvironment{highlights}{
+        \begin{itemize}[
+                topsep=0pt,
+                parsep=0.10 cm,
+                partopsep=0pt,
+                itemsep=0pt,
+                after=\vspace{-1\baselineskip},
+                leftmargin=0.4 cm + 3pt
+            ]
+    }{
+        \end{itemize}
+    } % new environment for highlights
+
+\newenvironment{header}{
+        \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+    }{
+        \par\kern\topsep
+    } % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    )
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+ % new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\mbox{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}}
+
+\let\originalTabularx\tabularx
+\let\originalEndTabularx\endtabularx
+
+\renewenvironment{tabularx}{\bgroup\centering\originalTabularx}{\originalEndTabularx\par\egroup}
+
+% For TextEntrys (see https://tex.stackexchange.com/a/600/287984):
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1\topsep=0pt\itemsep=0pt\parsep=0pt\parskip=0pt\labelwidth=0pt\itemindent=0pt\labelsep=0pt}\item[]}
+\let\endchangemargin=\endlist 
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+\begin{document}
+    \placelastupdatedtext
+    \begin{header}
+        \fontsize{20 pt}{20 pt}
+        \textbf{Sai Saketh Rambhatla}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{\hrefWithoutArrow{tel:+1(646)7372925}{{\footnotesize\faPhone*}\hspace*{0.13cm}+1 (646) 737-2925}}
+        \hspace*{0.5 cm}
+        \mbox{\hrefWithoutArrow{mailto:sakethrambhatla@gmail.com}{{\small\faEnvelope[regular]}\hspace*{0.13cm}sakethrambhatla@gmail.com}}
+        \hspace*{0.5 cm}
+        % \mbox{{\small\faMapMarker*}\hspace*{0.13cm}Your Location}
+        % \hspace*{0.5 cm}
+        \mbox{\hrefWithoutArrow{https://rssaketh.github.io/}{{\small\faLink}\hspace*{0.13cm}rssaketh.github.io}}
+        \hspace*{0.5 cm}
+        \mbox{\hrefWithoutArrow{https://scholar.google.com/citations?user=VRyNTogAAAAJ&hl=en}{{\small\faGraduationCap}\hspace*{0.13cm}Saketh R}}
+        \hspace*{0.5 cm}
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/rssaketh/}{{\small\faLinkedinIn}\hspace*{0.13cm}rssaketh}}
+    \end{header}
+
+    \vspace{0.3 cm}
+
+
+    % \section{Summary}
+
+    %     \begin{changemargin}{0.2 cm}{0.2 cm}
+    %     I am a Postdoctoral Researcher at Meta AI Research, where I am part of a team advancing state-of-the-art video generation methods. I earned my PhD in Electrical Engineering from the University of Maryland, College Park, where I developed algorithms for supervised, semi-supervised and unsupervised problems like localization and discovery of novel categories, few-shot classification, robust object detection, tracking, and neural network ensembles.
+    %     \end{changemargin}
+
+
+
+
+
+    
+    \section{Employment}
+
+\begin{tabularx}{\textwidth-0.4cm-0.13cm}{@{}lX@{}}
+\textbf{Member of Technical Staff}, Skild AI Research, San Mateo & \hfill Dec 2025 -- Present\\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{highlights}
+            \item Research and development of Vision-Language-Action (VLA) and World Action Models (WAMs) for multi-embodiment robot control, toward generalist robot policies.
+        \end{highlights}    
+    }\\
+    \\
+    \textbf{Sr. Research Scientist}, Meta AI Research, Seattle & \hfill Oct 2024 -- Dec 2025\\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{highlights}
+            \item Developed techniques for native image and video generation with large language models (LLMs).
+        \end{highlights}    
+    }\\
+\\
+    \textbf{Postdoctoral Researcher}, Meta AI Research, New York & \hfill Jan 2023 -- Oct 2024\\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{highlights}
+            \item Developed generative AI techniques for \textbf{generation} (\hrefWithoutArrow{https://ai.meta.com/research/movie-gen/}{Movie Gen}, \hrefWithoutArrow{https://emu-video.metademolab.com/}{Emu Video}, \hrefWithoutArrow{https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/}{InstanceDiffusion}) and \textbf{evaluation} (\hrefWithoutArrow{https://arxiv.org/pdf/2311.10708.pdf}{\mbox{SelfEval}}).
+        \end{highlights}
+    }
+\end{tabularx}
+
+    
+    \section{Education}
+\begin{tabularx}{\textwidth-0.4cm-0.13cm}{@{}lX@{}}
+    \textbf{PhD in Electrical Engineering}, University of Maryland, College Park & \hfill Aug 2016 -- Dec 2022 \\
+    \multicolumn{2}{p{\textwidth}}{
+\begin{highlights}
+        \item Advisors: Rama Chellappa and Abhinav Shrivastava
+        \item Thesis: Towards In-the-Wild Visual Understanding
+\end{highlights}
+    }
+\end{tabularx}
+    
+        \vspace{0.2 cm}
+\begin{tabularx}{\textwidth-0.4cm-0.13cm}{@{}lX@{}}
+    \textbf{Master's in Electrical Engineering}, University of Maryland, College Park & \hfill Aug 2016 -- Dec 2021 \\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{highlights}
+            \item Advisor: Rama Chellappa
+        \end{highlights}
+    }
+\end{tabularx}
+        \vspace{0.2 cm}
+\begin{tabularx}{\textwidth-0.4cm-0.13cm}{@{}lX@{}}
+    \textbf{Dual Degree in Electrical Engineering}, Indian Institute of Technology, Kharagpur & \hfill Jun 2011 -- Jun 2016 \\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{highlights}
+            \item Advisors: Pranab Kumar Datta and Rajeev Ranjan Sahay
+            \item Thesis: Body Pose Classification using Deep Learning
+        \end{highlights}
+    }
+\end{tabularx}
+
+
+    
+    \section{Selected Publications}
+\begin{itemize}[itemsep=3pt, parsep=0pt, topsep=2pt]
+\pub{Toward Diffusible High-Dimensional Latent Spaces: A Frequency Perspective}
+    {Bolin Lai, Xudong Wang, \me, James M. Rehg, Zsolt Kira, Rohit Girdhar, Ishan Misra}
+    {Conference on Computer Vision and Pattern Recognition (CVPR), 2026}
+
+\pub{Trokens: Semantic-Aware Relational Trajectory Tokens for Few-Shot Action Recognition}
+    {Pulkit Kumar, Shuaiyi Huang, Matthew Walmer, \me, Abhinav Shrivastava}
+    {International Conference on Computer Vision (ICCV), 2025}
+
+\pub{MotiF: Making Text Count in Image Animation with Motion Focal Loss}
+    {Shijie Wang, Samaneh Azadi, Rohit Girdhar, \me, Chen Sun, Xi Yin}
+    {Conference on Computer Vision and Pattern Recognition (CVPR), 2025}
+
+\pub{Diffusion Autoencoders are Scalable Image Tokenizers}
+    {Yinbo Chen, Rohit Girdhar, Xiaolong Wang, \me, Ishan Misra}
+    {arXiv preprint arXiv:2501.18593, 2025}
+
+\pub{Movie Gen: A Cast of Media Foundation Models}
+    {\textit{Meta Movie Gen team} --- Core contributor}
+    {arXiv preprint arXiv:2410.13720, 2024}
+
+\pub{Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning}
+    {Rohit Girdhar, Mannat Singh, Andrew Brown, Quentin Duval, Samaneh Azadi, \me, Mian Akbar Shah, Xi Yin, Devi Parikh, Ishan Misra}
+    {European Conference on Computer Vision (ECCV), 2024}
+
+\pub{SelfEval: Leveraging the Discriminative Nature of Generative Models for Evaluation}
+    {\me, Ishan Misra}
+    {Transactions on Machine Learning Research (TMLR), 2024}
+
+\pub{InstanceDiffusion: Instance-level Control for Image Generation}
+    {Xudong Wang, Trevor Darrell, \me, Rohit Girdhar, Ishan Misra}
+    {Conference on Computer Vision and Pattern Recognition (CVPR), 2024}
+
+\pub{MOST: Multiple Object Localization with Self-Supervised Transformers for Object Discovery}
+    {\me, Ishan Misra, Rama Chellappa, Abhinav Shrivastava}
+    {International Conference on Computer Vision (ICCV), 2023}
+
+\pub{SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining}
+    {\me$^{*}$, Saksham Suri$^{*}$, Rama Chellappa, Abhinav Shrivastava}
+    {International Conference on Computer Vision (ICCV), 2023}
+
+\pub{An Empirical Analysis of Boosting Neural Networks}
+    {\me, Michael Jones, Rama Chellappa}
+    {International Joint Conference on Neural Networks (IJCNN), 2022}
+
+\pub{The Pursuit of Knowledge: Discovering and Localizing New Concepts using Dual Memory}
+    {\me, Rama Chellappa, Abhinav Shrivastava}
+    {International Conference on Computer Vision (ICCV), 2021}
+
+\pub{Towards Discovery and Attribution of Open-world GAN Generated Images}
+    {Saksham Suri$^{*}$, Sharath Girish$^{*}$, \me, Abhinav Shrivastava}
+    {International Conference on Computer Vision (ICCV), 2021}
+
+% \item Recognizing actions using object states\\
+% Nirat Saini, Bo He, Gaurav Shrivastava, \me, Abhinav Shrivastava\\
+% \textcolor{gray}{International Conference on Learning Representations Workshops (ICLRW), 2022}
+
+% \item \hrefWithoutArrow{https://arxiv.org/abs/2110.13386}{Self-Denoising Neural Networks for Few Shot Learning}\\
+% Steve Schwarcz, \me, Rama Chellappa\\
+% \textcolor{gray}{arXiv preprint arXiv:2110.13386, 2021}
+
+% \item {Towards Accurate Visual and Natural Language-Based Vehicle Retrieval Systems}\\
+% Khorramshahi P.$^{*}$, \me$^{*}$, Chellappa R.\\
+% \textcolor{gray}{Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2021}
+
+% \item {Towards real-time systems for vehicle re-identification, multi-camera tracking, and anomaly detection}\\
+% Peri N.$^{*}$, Khorramshahi P.$^{*}$, \me$^{*}$, Shenoy V., Rawat S., Chen J.C., Chellappa R.\\
+% \textcolor{gray}{Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2020}
+
+\pub{Detecting Human-Object Interactions using Functional Common-Sense}
+    {Ankan Bansal, \me, Abhinav Shrivastava, Rama Chellappa}
+    {AAAI Conference on Artificial Intelligence (AAAI), 2020}
+
+% \item \hrefWithoutArrow{https://arxiv.org/abs/2004.04851}{Spatial Priming for Detecting Human-Object Interactions}\\
+% Ankan Bansal, \me, Abhinav Shrivastava, Rama Chellappa\\
+% \textcolor{gray}{arXiv preprint arXiv:2004.04851, 2020}
+
+\pub{A Dual-Path Model with Adaptive Attention for Vehicle Re-Identification}
+    {Pirazh Khorramshahi, Amit Kumar, Neehar Peri, \me, Jun-Cheng Chen, Rama Chellappa}
+    {International Conference on Computer Vision (ICCV), 2019}
+
+\pub{Body Part Alignment and Temporal Attention for Video-Based Person Re-Identification}
+    {\me, Michael Jones}
+    {British Machine Vision Conference (BMVC), 2019}
+
+% \item Deep Gesture: Static hand gesture recognition using CNN\\
+% Aparna Mohanty, \me, Rajeev Ranjan Sahay\\
+% \textcolor{gray}{CVIP, 2016}
+
+% \item Camera based estimation of respiration rate by analyzing shape and size variation of structured light\\
+% V. V. Makkapati, \me\\
+% \textcolor{gray}{International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2016}
+
+% \item Remote Monitoring of Camera based Respiration Rate Estimated by Using Occlusion of Dot Pattern\\
+% V. V. Makkapati, \me\\
+% \textcolor{gray}{IEEE Advanced Networks and Telecommunication Systems (ANTS), 2016}
+\end{itemize}
+
+    
+    \section{Research Internships}
+
+\begin{tabularx}{\textwidth-0.4cm-0.13cm}{@{}lX@{}}
+    \textbf{Cruise AI}, San Francisco (2022) & \hfill Advisors: \textcolor{advisorcolor}{Dr. Xiao Zhang, Dr. Carl Vondrick}\\
+    \multicolumn{2}{p{\textwidth}}{
+Developed efficient algorithms for continual self-supervised learning.
+
+    }
+\end{tabularx}
+\begin{tabularx}{\textwidth-0.4cm-0.13cm}{@{}lX@{}}
+    \textbf{Mitsubishi Electric Research Laboratory}, Boston (2018, 2019) & \hfill Advisor: \textcolor{advisorcolor}{Dr. Mike Jones}\\
+    \multicolumn{2}{p{\textwidth}}{
+Worked on video-based person re-identification and ensembles of deep neural networks.
+
+    }
+\end{tabularx}
+
+
+
+    
+    \section{Awards}
+
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=2pt]
+    \item Awarded the \textbf{Ann G. Wylie Dissertation Fellowship} for the academic year 2021--22.
+     \item Selected for the A. James Clark School of Engineering \textbf{Future Faculty Cohort} for the academic year 2021--22.
+    \item Awarded the prestigious \textbf{George Corcoran Award} for excellence in teaching for the academic year 2017--18.
+    \item Awarded \textbf{Outstanding Teaching Assistant Award} for the academic year 2017--18.
+    \item Awarded \textbf{Outstanding Reviewer} for CVPR 2021 and NeurIPS 2023.
+    \item Awarded \textbf{Best Paper Award (Honorable Mention)} at ANTS 2016, Bangalore.
+
+\end{itemize}
+
+
+    
+    \section{Academic Service}
+\textbf{Reviewing}
+\begin{itemize}[leftmargin=*, align=left, labelsep=0.2cm, itemsep=0cm, topsep=0cm]
+    \item CVPR ('19--'26), ECCV ('20--'26), ICCV ('19--'25), ICLR ('23--'25), NeurIPS ('23--'25), ICML ('24)
+    \item IJCV, T-PAMI, Pattern Recognition Letters
+    
+\end{itemize}
+\end{document}

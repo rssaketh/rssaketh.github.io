@@ -1,0 +1,76 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[left=2.3cm, right=2.3cm, top=1.9cm, bottom=1.9cm]{geometry}
+\RequirePackage{xcolor}
+\definecolor{accent}{RGB}{122, 31, 43}
+\definecolor{muted}{RGB}{95, 95, 95}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage[pdftitle={Sai Saketh Rambhatla - CV}, pdfauthor={Sai Saketh Rambhatla}, colorlinks=true, urlcolor=accent, linkcolor=accent]{hyperref}
+\let\hrefWithoutArrow\href
+\setlength{\parindent}{0pt}
+
+\usepackage{ebgaramond}
+\usepackage[explicit]{titlesec}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+\titleformat{\section}{\normalsize\color{accent}}{}{0pt}{\addfontfeatures{LetterSpace=14}\scshape\MakeLowercase{#1}}[\vspace{-0.45em}{\color{accent!60}\rule{\linewidth}{0.3pt}}]
+\titlespacing{\section}{0pt}{0.6cm}{0.3cm}
+\newcommand{\job}[5]{\textbf{#1}, #2, #3\hfill{\itshape\color{muted} #4}\par\vspace{0.05cm}{\leftskip=0.4cm #5\par}\vspace{0.22cm}}
+\newcommand{\degree}[4]{\textbf{#1}, #2\hfill{\itshape\color{muted} #3}\par{\leftskip=0.4cm\color{muted} #4\par}\vspace{0.18cm}}
+\newcommand{\pub}[3]{\item\begin{minipage}[t]{\linewidth}#1\\{\small #2}\\{\small\itshape\color{muted} #3}\end{minipage}}
+\newcommand{\intern}[5]{\textbf{#1}, #2 (#3)\hfill{\itshape\color{muted} #4}\par{\leftskip=0.4cm #5\par}\vspace{0.18cm}}
+\newcommand{\me}{\textbf{Sai Saketh Rambhatla}}
+\begin{document}
+\begin{center}
+{\fontsize{26pt}{28pt}\selectfont\color{accent} Sai Saketh Rambhatla\par}
+\vspace{0.25cm}
+{\small \hrefWithoutArrow{tel:+1(646)7372925}{+1 (646) 737-2925}\hspace{0.3cm}{\color{accent!50}\textperiodcentered}\hspace{0.3cm}\hrefWithoutArrow{mailto:sakethrambhatla@gmail.com}{sakethrambhatla@gmail.com}\hspace{0.3cm}{\color{accent!50}\textperiodcentered}\hspace{0.3cm}\hrefWithoutArrow{https://rssaketh.github.io/}{rssaketh.github.io}\hspace{0.3cm}{\color{accent!50}\textperiodcentered}\hspace{0.3cm}\hrefWithoutArrow{https://scholar.google.com/citations?user=VRyNTogAAAAJ&hl=en}{Google Scholar}\hspace{0.3cm}{\color{accent!50}\textperiodcentered}\hspace{0.3cm}\hrefWithoutArrow{https://www.linkedin.com/in/rssaketh/}{linkedin.com/in/rssaketh}\par}
+\end{center}
+\vspace{0.1cm}
+\section{Employment}
+\job{Member of Technical Staff}{Skild AI Research}{San Mateo}{Dec 2025 -- Present}{Research and development of Vision-Language-Action (VLA) and World Action Models (WAMs) for multi-embodiment robot control, toward generalist robot policies.}
+\job{Sr. Research Scientist}{Meta AI Research}{Seattle}{Oct 2024 -- Dec 2025}{Developed techniques for native image and video generation with large language models (LLMs).}
+\job{Postdoctoral Researcher}{Meta AI Research}{New York}{Jan 2023 -- Oct 2024}{Developed generative AI techniques for \textbf{generation} (\href{https://ai.meta.com/research/movie-gen/}{Movie Gen}, \href{https://emu-video.metademolab.com/}{Emu Video}, \href{https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/}{InstanceDiffusion}) and \textbf{evaluation} (\href{https://arxiv.org/pdf/2311.10708.pdf}{\mbox{SelfEval}}).}
+\section{Education}
+\degree{PhD in Electrical Engineering}{University of Maryland, College Park}{Aug 2016 -- Dec 2022}{Advisors: Rama Chellappa and Abhinav Shrivastava; Thesis: Towards In-the-Wild Visual Understanding}
+\degree{Master's in Electrical Engineering}{University of Maryland, College Park}{Aug 2016 -- Dec 2021}{Advisor: Rama Chellappa}
+\degree{Dual Degree in Electrical Engineering}{Indian Institute of Technology, Kharagpur}{Jun 2011 -- Jun 2016}{Advisors: Pranab Kumar Datta and Rajeev Ranjan Sahay; Thesis: Body Pose Classification using Deep Learning}
+\section{Selected Publications}
+\begin{enumerate}[leftmargin=0.7cm, topsep=0pt, itemsep=4pt, label={\small\color{accent}\arabic*.}]
+\pub{Toward Diffusible High-Dimensional Latent Spaces: A Frequency Perspective}{Bolin Lai, Xudong Wang, \me, James M. Rehg, Zsolt Kira, Rohit Girdhar, Ishan Misra}{Conference on Computer Vision and Pattern Recognition (CVPR), 2026}
+\pub{Trokens: Semantic-Aware Relational Trajectory Tokens for Few-Shot Action Recognition}{Pulkit Kumar, Shuaiyi Huang, Matthew Walmer, \me, Abhinav Shrivastava}{International Conference on Computer Vision (ICCV), 2025}
+\pub{MotiF: Making Text Count in Image Animation with Motion Focal Loss}{Shijie Wang, Samaneh Azadi, Rohit Girdhar, \me, Chen Sun, Xi Yin}{Conference on Computer Vision and Pattern Recognition (CVPR), 2025}
+\pub{Diffusion Autoencoders are Scalable Image Tokenizers}{Yinbo Chen, Rohit Girdhar, Xiaolong Wang, \me, Ishan Misra}{arXiv preprint arXiv:2501.18593, 2025}
+\pub{Movie Gen: A Cast of Media Foundation Models}{\textit{Meta Movie Gen team} --- Core contributor}{arXiv preprint arXiv:2410.13720, 2024}
+\pub{Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning}{Rohit Girdhar, Mannat Singh, Andrew Brown, Quentin Duval, Samaneh Azadi, \me, Mian Akbar Shah, Xi Yin, Devi Parikh, Ishan Misra}{European Conference on Computer Vision (ECCV), 2024}
+\pub{SelfEval: Leveraging the Discriminative Nature of Generative Models for Evaluation}{\me, Ishan Misra}{Transactions on Machine Learning Research (TMLR), 2024}
+\pub{InstanceDiffusion: Instance-level Control for Image Generation}{Xudong Wang, Trevor Darrell, \me, Rohit Girdhar, Ishan Misra}{Conference on Computer Vision and Pattern Recognition (CVPR), 2024}
+\pub{MOST: Multiple Object Localization with Self-Supervised Transformers for Object Discovery}{\me, Ishan Misra, Rama Chellappa, Abhinav Shrivastava}{International Conference on Computer Vision (ICCV), 2023}
+\pub{SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining}{\me$^{*}$, Saksham Suri$^{*}$, Rama Chellappa, Abhinav Shrivastava}{International Conference on Computer Vision (ICCV), 2023}
+\pub{An Empirical Analysis of Boosting Neural Networks}{\me, Michael Jones, Rama Chellappa}{International Joint Conference on Neural Networks (IJCNN), 2022}
+\pub{The Pursuit of Knowledge: Discovering and Localizing New Concepts using Dual Memory}{\me, Rama Chellappa, Abhinav Shrivastava}{International Conference on Computer Vision (ICCV), 2021}
+\pub{Towards Discovery and Attribution of Open-world GAN Generated Images}{Saksham Suri$^{*}$, Sharath Girish$^{*}$, \me, Abhinav Shrivastava}{International Conference on Computer Vision (ICCV), 2021}
+\pub{Detecting Human-Object Interactions using Functional Common-Sense}{Ankan Bansal, \me, Abhinav Shrivastava, Rama Chellappa}{AAAI Conference on Artificial Intelligence (AAAI), 2020}
+\pub{A Dual-Path Model with Adaptive Attention for Vehicle Re-Identification}{Pirazh Khorramshahi, Amit Kumar, Neehar Peri, \me, Jun-Cheng Chen, Rama Chellappa}{International Conference on Computer Vision (ICCV), 2019}
+\pub{Body Part Alignment and Temporal Attention for Video-Based Person Re-Identification}{\me, Michael Jones}{British Machine Vision Conference (BMVC), 2019}
+\end{enumerate}
+\section{Research Internships}
+\intern{Cruise AI}{San Francisco}{2022}{Advisors: Dr. Xiao Zhang, Dr. Carl Vondrick}{Developed efficient algorithms for continual self-supervised learning.}
+\intern{Mitsubishi Electric Research Laboratory}{Boston}{2018, 2019}{Advisor: Dr. Mike Jones}{Worked on video-based person re-identification and ensembles of deep neural networks.}
+\section{Awards}
+\begin{itemize}[leftmargin=0.5cm, topsep=0pt, itemsep=1pt, parsep=0pt, label={\color{accent}\textperiodcentered}]
+\item Awarded the \textbf{Ann G. Wylie Dissertation Fellowship} for the academic year 2021--22.
+\item Selected for the A. James Clark School of Engineering \textbf{Future Faculty Cohort} for the academic year 2021--22.
+\item Awarded the prestigious \textbf{George Corcoran Award} for excellence in teaching for the academic year 2017--18.
+\item Awarded \textbf{Outstanding Teaching Assistant Award} for the academic year 2017--18.
+\item Awarded \textbf{Outstanding Reviewer} for CVPR 2021 and NeurIPS 2023.
+\item Awarded \textbf{Best Paper Award (Honorable Mention)} at ANTS 2016, Bangalore.
+\end{itemize}
+\section{Academic Service}
+\textbf{Reviewing.} CVPR ('19--'26), ECCV ('20--'26), ICCV ('19--'25), ICLR ('23--'25), NeurIPS ('23--'25), ICML ('24); IJCV, T-PAMI, Pattern Recognition Letters.
+\end{document}

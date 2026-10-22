@@ -1,0 +1,94 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[left=1.1cm, right=1.3cm, top=1.3cm, bottom=1.4cm]{geometry}
+\RequirePackage{xcolor}\definecolor{accent}{RGB}{44, 62, 92}
+\definecolor{tint}{RGB}{238, 242, 247}
+\definecolor{muted}{RGB}{105, 115, 130}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage[pdftitle={Sai Saketh Rambhatla - CV}, pdfauthor={Sai Saketh Rambhatla}, colorlinks=true, urlcolor=accent, linkcolor=accent]{hyperref}
+\let\hrefWithoutArrow\href
+\setlength{\parindent}{0pt}
+
+\usepackage[default]{sourcesanspro}
+\usepackage{paracol}
+\usepackage{eso-pic}
+\usepackage[explicit]{titlesec}
+\usepackage{lastpage}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+% tinted sidebar on every page
+\AddToShipoutPictureBG{\AtPageLowerLeft{\color{tint}\rule{6.85cm}{\paperheight}}}
+\columnratio{0.29}
+\setlength{\columnsep}{0.9cm}
+\titleformat{\section}{\color{accent}\bfseries\large}{}{0pt}{#1}[\vspace{-0.55em}{\color{accent!35}\rule{\linewidth}{0.6pt}}]
+\titlespacing{\section}{0pt}{0.55cm}{0.25cm}
+\newcommand{\sidesec}[1]{\par\vspace{0.5cm}{\color{accent}\bfseries\small\MakeUppercase{#1}}\par\vspace{-0.3em}{\color{accent!40}\rule{\linewidth}{0.6pt}}\par\vspace{0.15cm}}
+\newcommand{\contact}[3]{\mbox{\makebox[0.5cm][l]{\color{accent}\small #1}\hrefWithoutArrow{#2}{\small\color{black}#3}}\par\vspace{0.12cm}}
+\newcommand{\sdegree}[4]{{\bfseries #1}\par{\small #2}\par{\small\color{accent} #3}\par\vspace{0.05cm}{\footnotesize\color{muted} #4\par}\vspace{0.3cm}}
+\newcommand{\job}[4]{{\bfseries #1}\hfill{\small\color{accent}\bfseries #3}\par{\color{muted}#2}\par\vspace{0.08cm}\begin{itemize}[leftmargin=0.4cm, topsep=0pt, itemsep=0pt]\item #4\end{itemize}\vspace{0.25cm}}
+\newcommand{\pub}[3]{\item\begin{minipage}[t]{\linewidth}\raggedright{\bfseries #1}\\{\small #2}\\{\small\color{accent}\itshape #3}\end{minipage}}
+\newcommand{\intern}[4]{{\bfseries #1}, #2\par{\small\color{muted} #3}\par\vspace{0.05cm}#4\par\vspace{0.25cm}}
+\newcommand{\me}{\textbf{Sai Saketh Rambhatla}}
+\begin{document}
+\begin{paracol}{2}
+\raggedright
+{\fontsize{22pt}{24pt}\selectfont\bfseries\color{accent} Sai Saketh\\Rambhatla\par}
+\vspace{0.2cm}
+{\small\color{muted} Member of Technical Staff\\Skild AI Research\par}
+\sidesec{Contact}
+\contact{\faPhone*}{tel:+1(646)7372925}{+1 (646) 737-2925}
+\contact{\faEnvelope[regular]}{mailto:sakethrambhatla@gmail.com}{sakethrambhatla@gmail.com}
+\contact{\faLink}{https://rssaketh.github.io/}{rssaketh.github.io}
+\contact{\faGraduationCap}{https://scholar.google.com/citations?user=VRyNTogAAAAJ&hl=en}{Google Scholar}
+\contact{\faLinkedinIn}{https://www.linkedin.com/in/rssaketh/}{linkedin.com/in/rssaketh}
+\sidesec{Education}
+\sdegree{PhD in Electrical Engineering}{University of Maryland, College Park}{Aug 2016 -- Dec 2022}{Advisors: Rama Chellappa and Abhinav Shrivastava\\ Thesis: Towards In-the-Wild Visual Understanding}
+\sdegree{Master's in Electrical Engineering}{University of Maryland, College Park}{Aug 2016 -- Dec 2021}{Advisor: Rama Chellappa}
+\sdegree{Dual Degree in Electrical Engineering}{Indian Institute of Technology, Kharagpur}{Jun 2011 -- Jun 2016}{Advisors: Pranab Kumar Datta and Rajeev Ranjan Sahay\\ Thesis: Body Pose Classification using Deep Learning}
+\sidesec{Reviewing}
+{\small CVPR ('19--'26), ECCV ('20--'26), ICCV ('19--'25), ICLR ('23--'25), NeurIPS ('23--'25), ICML ('24).\par\vspace{0.1cm}IJCV, T-PAMI, Pattern Recognition Letters.\par}
+\sidesec{Awards}
+\begin{itemize}[leftmargin=0.3cm, topsep=0pt, itemsep=3pt, parsep=0pt, label={\color{accent}\textbullet}]\small
+\item Awarded the \textbf{Ann G. Wylie Dissertation Fellowship} for the academic year 2021--22.
+\item Selected for the A. James Clark School of Engineering \textbf{Future Faculty Cohort} for the academic year 2021--22.
+\item Awarded the prestigious \textbf{George Corcoran Award} for excellence in teaching for the academic year 2017--18.
+\item Awarded \textbf{Outstanding Teaching Assistant Award} for the academic year 2017--18.
+\item Awarded \textbf{Outstanding Reviewer} for CVPR 2021 and NeurIPS 2023.
+\item Awarded \textbf{Best Paper Award (Honorable Mention)} at ANTS 2016, Bangalore.
+\end{itemize}
+\switchcolumn
+\raggedright
+\vspace*{-0.55cm}
+\section{Experience}
+\job{Member of Technical Staff}{Skild AI Research, San Mateo}{Dec 2025 -- Present}{Research and development of Vision-Language-Action (VLA) and World Action Models (WAMs) for multi-embodiment robot control, toward generalist robot policies.}
+\job{Sr. Research Scientist}{Meta AI Research, Seattle}{Oct 2024 -- Dec 2025}{Developed techniques for native image and video generation with large language models (LLMs).}
+\job{Postdoctoral Researcher}{Meta AI Research, New York}{Jan 2023 -- Oct 2024}{Developed generative AI techniques for \textbf{generation} (\href{https://ai.meta.com/research/movie-gen/}{Movie Gen}, \href{https://emu-video.metademolab.com/}{Emu Video}, \href{https://people.eecs.berkeley.edu/~xdwang/projects/InstDiff/}{InstanceDiffusion}) and \textbf{evaluation} (\href{https://arxiv.org/pdf/2311.10708.pdf}{\mbox{SelfEval}}).}
+\section{Selected Publications}
+\begin{itemize}[leftmargin=0.35cm, topsep=0pt, itemsep=4pt, label={\color{accent}\small\textbullet}]
+\pub{Toward Diffusible High-Dimensional Latent Spaces: A Frequency Perspective}{Bolin Lai, Xudong Wang, \me, James M. Rehg, Zsolt Kira, Rohit Girdhar, Ishan Misra}{CVPR 2026}
+\pub{Trokens: Semantic-Aware Relational Trajectory Tokens for Few-Shot Action Recognition}{Pulkit Kumar, Shuaiyi Huang, Matthew Walmer, \me, Abhinav Shrivastava}{ICCV 2025}
+\pub{MotiF: Making Text Count in Image Animation with Motion Focal Loss}{Shijie Wang, Samaneh Azadi, Rohit Girdhar, \me, Chen Sun, Xi Yin}{CVPR 2025}
+\pub{Diffusion Autoencoders are Scalable Image Tokenizers}{Yinbo Chen, Rohit Girdhar, Xiaolong Wang, \me, Ishan Misra}{arXiv:2501.18593, 2025}
+\pub{Movie Gen: A Cast of Media Foundation Models}{\textit{Meta Movie Gen team} --- Core contributor}{arXiv:2410.13720, 2024}
+\pub{Emu Video: Factorizing Text-to-Video Generation by Explicit Image Conditioning}{Rohit Girdhar, Mannat Singh, Andrew Brown, Quentin Duval, Samaneh Azadi, \me, Mian Akbar Shah, Xi Yin, Devi Parikh, Ishan Misra}{ECCV 2024}
+\pub{SelfEval: Leveraging the Discriminative Nature of Generative Models for Evaluation}{\me, Ishan Misra}{TMLR 2024}
+\pub{InstanceDiffusion: Instance-level Control for Image Generation}{Xudong Wang, Trevor Darrell, \me, Rohit Girdhar, Ishan Misra}{CVPR 2024}
+\pub{MOST: Multiple Object Localization with Self-Supervised Transformers for Object Discovery}{\me, Ishan Misra, Rama Chellappa, Abhinav Shrivastava}{ICCV 2023}
+\pub{SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining}{\me$^{*}$, Saksham Suri$^{*}$, Rama Chellappa, Abhinav Shrivastava}{ICCV 2023}
+\pub{An Empirical Analysis of Boosting Neural Networks}{\me, Michael Jones, Rama Chellappa}{IJCNN 2022}
+\pub{The Pursuit of Knowledge: Discovering and Localizing New Concepts using Dual Memory}{\me, Rama Chellappa, Abhinav Shrivastava}{ICCV 2021}
+\pub{Towards Discovery and Attribution of Open-world GAN Generated Images}{Saksham Suri$^{*}$, Sharath Girish$^{*}$, \me, Abhinav Shrivastava}{ICCV 2021}
+\pub{Detecting Human-Object Interactions using Functional Common-Sense}{Ankan Bansal, \me, Abhinav Shrivastava, Rama Chellappa}{AAAI 2020}
+\pub{A Dual-Path Model with Adaptive Attention for Vehicle Re-Identification}{Pirazh Khorramshahi, Amit Kumar, Neehar Peri, \me, Jun-Cheng Chen, Rama Chellappa}{ICCV 2019}
+\pub{Body Part Alignment and Temporal Attention for Video-Based Person Re-Identification}{\me, Michael Jones}{BMVC 2019}
+\end{itemize}
+\section{Research Internships}
+\intern{Cruise AI}{San Francisco (2022)}{Advisors: Dr. Xiao Zhang, Dr. Carl Vondrick}{Developed efficient algorithms for continual self-supervised learning.}
+\intern{Mitsubishi Electric Research Laboratory}{Boston (2018, 2019)}{Advisor: Dr. Mike Jones}{Worked on video-based person re-identification and ensembles of deep neural networks.}
+\end{paracol}
+\end{document}
