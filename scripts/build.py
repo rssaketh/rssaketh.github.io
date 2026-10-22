@@ -239,7 +239,7 @@ def build():
     home = f'''    <section class="hero">
       <p class="kicker"><span class="dot"></span>Member of Technical Staff · Skild AI</p>
       <h1>Saketh<br><em>Rambhatla</em></h1>
-      <p class="lede">At Skild AI, I build foundation models that help robots act in the real world. Before that I spent three years at Meta making models that generate images and video, like Movie Gen and Emu Video, and did my Ph.D. at Maryland on visual understanding in the wild.</p>
+      <p class="lede">These days I’m teaching robots to do useful things at Skild AI. Before that I spent three years at Meta getting AI to dream up images and video, like Movie Gen and Emu Video.</p>
       <div class="btns">
         <a class="btn primary" href="/research/">See research →</a>
         <a class="btn glass" href="/about/">About me</a>
